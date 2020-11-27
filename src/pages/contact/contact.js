@@ -1,4 +1,6 @@
 import React from 'react';
+import './contact.css';
+
 
 class MyForm extends React.Component {
     constructor(props) {
@@ -11,9 +13,9 @@ class MyForm extends React.Component {
     }
     mySubmitHandler = (event) => {
         event.preventDefault();
-        let age = this.state.age;
-        if (!Number(age)) {
-            alert("Your age must be a number");
+        let email = this.state.email;
+        if (!String(email)) {
+            alert("Your email must be active.");
         }
     }
     myChangeHandler = (event) => {
@@ -37,7 +39,8 @@ class MyForm extends React.Component {
                     name='email'
                 />
                 <br />
-                <textarea value={this.state.description} />
+                <textarea value={this.state.description}
+                    onChange={this.myChangeHandler} />
                 <br />
                 <br />
                 <input type='submit' />
