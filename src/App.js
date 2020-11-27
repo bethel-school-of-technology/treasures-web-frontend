@@ -19,7 +19,7 @@ function App() {
       </header>
       <Footer/>
     </div>
-  );
+  ); 
 }
 
 export default App;
