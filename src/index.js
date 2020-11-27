@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Contact from './pages/contact/contact';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Footer from './components/Footer';
 
 const Pages = () => (
   <Router>

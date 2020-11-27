@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           Treasures Current Website
         </a>
       </header>
+      <Footer/>
     </div>
   );
 }
