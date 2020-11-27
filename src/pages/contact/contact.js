@@ -8,7 +8,7 @@ class MyForm extends React.Component {
         this.state = {
             username: '',
             email: '',
-            description: 'Please put information here.',
+            description: 'Please type in your question here.'
         };
     }
     mySubmitHandler = (event) => {
@@ -38,6 +38,7 @@ class MyForm extends React.Component {
                     type='string'
                     name='email'
                 />
+                <br />
                 <br />
                 <textarea value={this.state.description}
                     onChange={this.myChangeHandler} />
