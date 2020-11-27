@@ -2,16 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Contact from './pages/contact/contact';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const Pages = () => (
+  <Router>
+    <div>
+      <ul>
+        <li><Link to="/">Home Page</Link></li>
+        <li><Link to="/Contact">Contact Us</Link></li>
+      </ul>
+      <hr />
+      <Route exact path="/" component={App} />
+      <Route path="/Contact" component={Contact} />
+    </div>
+  </Router>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<Pages />, document.getElementById('root'));
