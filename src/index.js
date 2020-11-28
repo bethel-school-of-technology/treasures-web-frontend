@@ -2,22 +2,34 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Contact from './pages/contact/contact';
+import MyForm from './pages/contact/contact';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Blogs from './pages/blogs/blogs';
+import myDeclaration from './pages/declaration/declaration';
+import ourHearts from './pages/hearts/hearts';
+import myMentor from './pages/mentoring/mentoring';
+import Resources from './pages/resources/resources';
+import Footer from './components/Footer';
 
 const Pages = () => (
   <Router>
-    <div>
-      <ul>
-        <li><Link to="/">Home Page</Link></li>
-        <li><Link to="/Contact">Contact Us</Link></li>
-        <li><Link to="/Blogs">Blogs</Link></li>
-      </ul>
+    <div class="Main">
+      <Link class='navBarLink' to="/">Home Page</Link>
+      <Link class='navBarLink' to="/Contact">Contact Us</Link>
+      <Link class='navBarLink' to="/Blogs">Blogs</Link>
+      <Link class='navBarLink' to="Declaration">Declaration</Link>
+      <Link class='navBarLink' to="Hearts">Our Hearts</Link>
+      <Link class='navBarLink' to="Mentoring">Mentoring</Link>
+      <Link class='navBarLink' to="Resources">Resources</Link>
       <hr />
       <Route exact path="/" component={App} />
-      <Route path="/Contact" component={Contact} />
+      <Route path="/Contact" component={MyForm} />
       <Route path="/Blogs" component={Blogs} />
+      <Route path="/Declaration" component={myDeclaration} />
+      <Route path="/Hearts" component={ourHearts} />
+      <Route path="/Mentoring" component={myMentor} />
+      <Route path="/Resources" component={Resources} />
+      <Footer />
     </div>
   </Router>
 );
