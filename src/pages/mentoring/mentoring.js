@@ -1,9 +1,15 @@
 import React from 'react';
 import './mentoring.css';
+import Footer from '../../components/Footer';
 
 class myMentor extends React.Component {
     render() {
-        return <h1>Mentoring Services</h1>;
+        return (
+            <div>
+                <h1>Treasures Mentoring</h1>
+                <Footer />
+            </div>
+        )
     }
 }
 
