@@ -1,6 +1,5 @@
 import React from 'react';
 import './contact.css';
-//import Footer from '../../components/Footer';
 
 
 class MyForm extends React.Component {
@@ -8,15 +7,14 @@ class MyForm extends React.Component {
         super(props);
         this.state = {
             username: '',
-            email: '',
-            description: 'Please type in your question here.'
+            email: 'string',
         };
     }
     mySubmitHandler = (event) => {
         event.preventDefault();
         let email = this.state.email;
         if (!String(email)) {
-            alert("Your email must be active.");
+            alert("Your email must be a valid email address.");
         }
     }
     myChangeHandler = (event) => {
@@ -42,8 +40,7 @@ class MyForm extends React.Component {
                     />
                     <br />
                     <br />
-                    <textarea value={this.state.description}
-                        onChange={this.myChangeHandler} />
+                    <textarea placeholder="Place your questions or comments in here."></textarea>
                     <br />
                     <br />
                     <input type='submit' />

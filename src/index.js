@@ -13,16 +13,14 @@ import Footer from './components/Footer';
 
 const Pages = () => (
   <Router>
-    <div>
-      <ul>
-        <li><Link to="/">Home Page</Link></li>
-        <li><Link to="/Contact">Contact Us</Link></li>
-        <li><Link to="/Blogs">Blogs</Link></li>
-        <li><Link to="Declaration">Declaration</Link></li>
-        <li><Link to="Hearts">Our Hearts</Link></li>
-        <li><Link to="Mentoring">Mentoring</Link></li>
-        <li><Link to="Resources">Resources</Link></li>
-      </ul>
+    <div class="Main">
+      <Link class='navBarLink' to="/">Home Page</Link>
+      <Link class='navBarLink' to="/Contact">Contact Us</Link>
+      <Link class='navBarLink' to="/Blogs">Blogs</Link>
+      <Link class='navBarLink' to="Declaration">Declaration</Link>
+      <Link class='navBarLink' to="Hearts">Our Hearts</Link>
+      <Link class='navBarLink' to="Mentoring">Mentoring</Link>
+      <Link class='navBarLink' to="Resources">Resources</Link>
       <hr />
       <Route exact path="/" component={App} />
       <Route path="/Contact" component={MyForm} />
