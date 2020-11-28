@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import Footer from '../../components/Footer';
+//import Footer from '../../components/Footer';
 
 
 class MyForm extends React.Component {
@@ -26,7 +26,7 @@ class MyForm extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div class="center">
                 <form onSubmit={this.mySubmitHandler}>
                     <h1>Hello {this.state.username}</h1>
                     <p>Enter your name:</p>
@@ -48,12 +48,8 @@ class MyForm extends React.Component {
                     <br />
                     <input type='submit' />
                 </form>
-                <Footer />
             </div>
-
         );
-
-
     }
 }
 

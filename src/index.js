@@ -9,6 +9,7 @@ import myDeclaration from './pages/declaration/declaration';
 import ourHearts from './pages/hearts/hearts';
 import myMentor from './pages/mentoring/mentoring';
 import Resources from './pages/resources/resources';
+import Footer from './components/Footer';
 
 const Pages = () => (
   <Router>
@@ -30,6 +31,7 @@ const Pages = () => (
       <Route path="/Hearts" component={ourHearts} />
       <Route path="/Mentoring" component={myMentor} />
       <Route path="/Resources" component={Resources} />
+      <Footer />
     </div>
   </Router>
 );

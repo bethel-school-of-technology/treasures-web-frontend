@@ -1,13 +1,11 @@
 import React from 'react';
 import './resources.css';
-import Footer from '../../components/Footer';
 
 class Resources extends React.Component {
     render() {
         return (
-            <div>
+            <div class="resources">
                 <h1>Treasures Resources</h1>
-                <Footer />
             </div>
         )
     }

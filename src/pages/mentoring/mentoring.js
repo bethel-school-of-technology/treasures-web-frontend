@@ -1,13 +1,11 @@
 import React from 'react';
 import './mentoring.css';
-import Footer from '../../components/Footer';
 
 class myMentor extends React.Component {
     render() {
         return (
-            <div>
+            <div class="mentoring">
                 <h1>Treasures Mentoring</h1>
-                <Footer />
             </div>
         )
     }

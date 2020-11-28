@@ -1,13 +1,11 @@
 import React from 'react';
 import './hearts.css';
-import Footer from '../../components/Footer';
 
 class ourHearts extends React.Component {
     render() {
         return (
-            <div>
+            <div class="hearts">
                 <h1>Our Hearts</h1>
-                <Footer />
             </div>
         )
     }
