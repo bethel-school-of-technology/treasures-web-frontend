@@ -47,13 +47,13 @@ class MyForm extends React.Component {
                     <br />
                     <br />
                     <input type='submit' />
-                </form> 
-                <Footer /> 
+                </form>
+                <Footer />
             </div>
-            
+
         );
-        
-        
+
+
     }
 }
 
