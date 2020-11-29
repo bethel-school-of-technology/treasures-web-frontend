@@ -17,5 +17,9 @@ code {
 }
 
 .navBarLink {
-  margin-right: 15px;
+  margin-right: 50px;
+}
+
+.contactUs {
+  justify-content: flex-end;
 }

@@ -15,12 +15,12 @@ const Pages = () => (
   <Router>
     <div class="Main">
       <Link class='navBarLink' to="/">Home Page</Link>
-      <Link class='navBarLink' to="/Contact">Contact Us</Link>
       <Link class='navBarLink' to="/Blogs">Blogs</Link>
       <Link class='navBarLink' to="Declaration">Declaration</Link>
       <Link class='navBarLink' to="Hearts">Our Hearts</Link>
       <Link class='navBarLink' to="Mentoring">Mentoring</Link>
       <Link class='navBarLink' to="Resources">Resources</Link>
+      <Link class='contactUs' to="/Contact">Contact Us</Link>
       <hr />
       <Route exact path="/" component={App} />
       <Route path="/Contact" component={MyForm} />
