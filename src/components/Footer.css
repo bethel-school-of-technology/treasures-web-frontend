@@ -1,0 +1,17 @@
+#footer {
+    background-color: rgb(90, 156, 145);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    
+}
+
+.copyright {
+    background-color: rgb(30, 86, 122);
+    text-align: center;
+}
