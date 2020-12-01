@@ -1,5 +1,10 @@
 .hearts {
     text-align: center;
-    color: green;
-    background-color: blueviolet;
+    color: whitesmoke;
+    background-color:  rgb(152, 145, 136);
+}
+
+p {
+    width: 100%;
+    color: white;
 }
