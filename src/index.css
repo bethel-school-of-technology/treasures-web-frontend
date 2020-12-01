@@ -18,8 +18,14 @@ code {
 
 .navBarLink {
   margin-right: 50px;
+
 }
 
-.contactUs {
+/* .contactUs {
   justify-content: flex-end;
+} */
+
+.logo {
+  text-align: end;
+  margin-right: 5rem;
 }

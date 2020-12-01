@@ -1,5 +1,13 @@
 .center {
     text-align: center;
-    color: lightgreen;
-    background-color: mediumblue;
+    color: rgb(251, 255, 251);
+    background-color: rgb(132, 192, 238);
+}
+
+.submit-button {
+    background-color: rgb(152, 145, 136);
+    box-shadow: 3px 3px 3px rgb(38, 38, 38);
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
 }

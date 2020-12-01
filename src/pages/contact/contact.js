@@ -43,7 +43,7 @@ class MyForm extends React.Component {
                     <textarea placeholder="Place your questions or comments in here."></textarea>
                     <br />
                     <br />
-                    <input type='submit' />
+                    <input class="submit-button" type='submit' />
                 </form>
             </div>
         );
