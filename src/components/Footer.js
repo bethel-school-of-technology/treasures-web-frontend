@@ -1,6 +1,8 @@
 import React from "react";
 import './Footer.css';
 
+const currentDate = new Date();
+const year = currentDate.getFullYear();
 
 class Footer extends React.Component {
     render() {
@@ -28,7 +30,7 @@ class Footer extends React.Component {
               <div className="copyright">
                 <p>
                   <span dangerouslySetInnerHTML={{ __html: "&copy;" }} />
-                  Treasures Ministries 2017
+                  Treasures Ministries {year}
                 </p>
               </div>
             </div>
