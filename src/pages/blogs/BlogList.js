@@ -13,18 +13,37 @@ function BlogList() {
     getAllBlogs();
   }, [])
 
-  // ------------- Need to validate if the className on the div is App or should be diff such as Blog?
+  // ------------- Need to validate if the className on the div is App or should be different such as Blog? 
+  // 
   return (
-    <div className="App"> 
+    <div className="App">
       {blogs.map((blog, idx) => {
         return (
-          <div key={idx} className={idx}>
-            {blog._id} | {blog.title} | {blog.description} | {blog.date}
-            <br></br>
-            {blog.mainBody}
-            <br></br>
-            <br></br>
+          <div className="blogContainer">
+            {/* <br></br> */}
+
+            <div key={idx} className={idx}>
+              {/* <div className={"container", "blogBox"} > */}
+
+              <div class="card">
+                <div class="card-header">{blog.date}</div>
+                <div class="card-body">
+                  <h5 class="card-title">{blog.title}</h5>
+                  <p class="card-text">{blog.description}</p>
+                  <a href="#" class="btn btn-primary">Read more...</a>
+                </div>
+              </div>
+
+              {/* {blog._id} | {blog.title} | {blog.description} | {blog.date}
+              <br></br>
+              {blog.mainBody} */}
+
+              {/* </div> */}
+              {/* <br></br> */}
+
+            </div>
           </div>
+
         )
       })}
     </div>
