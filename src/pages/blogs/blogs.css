@@ -1,35 +1,28 @@
-.blogBox {
-  background: rgb(171, 224, 206, 0.8);
-}
 
-.blogTitle {
-  /* text-align: left; */
-  background: rgba(203, 218, 213, 0.8);
-}
-
-.blogDate {
-  /* text-align: right; */
-  background: rgba(93, 211, 171, 0.8);
-}
-
-.blogDesc {
-  /* text-align: justify; */
-  background: rgba(6, 133, 90, 0.8);
-}
-
-.blogContainer{
+.blogContainer {
   background: rgba(144, 226, 37, 0.8);
   margin: 1rem;
-  padding: 1rem;
+  padding: 1rem 3rem;
+  width: 75%;
 }
 
+.card {
+  background: rgba(226, 37, 201, 0.8);
+  margin: 1rem;
+  padding: 1rem 3rem;
+  /* width: 75%; */
+}
 .card-header {
   background: rgba(166, 221, 203, 0.8);
   text-align: left;
-}.card-title {
+}
+
+.card-title {
   background: rgba(128, 240, 203, 0.8);
   text-align: left;
-}.card-text {
+}
+
+.card-text {
   background: rgba(6, 133, 90, 0.8);
-    text-align: justify;
+  text-align: justify;
 }

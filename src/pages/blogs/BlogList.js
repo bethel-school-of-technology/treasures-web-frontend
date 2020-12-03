@@ -16,21 +16,19 @@ function BlogList() {
   // ------------- Need to validate if the className on the div is App or should be different such as Blog? 
   // 
   return (
-    <div className="App">
+    <div className="blogContainer">
       {blogs.map((blog, idx) => {
         return (
-          <div className="blogContainer">
-            {/* <br></br> */}
+          // <div >
 
             <div key={idx} className={idx}>
-              {/* <div className={"container", "blogBox"} > */}
 
-              <div class="card">
-                <div class="card-header">{blog.date}</div>
-                <div class="card-body">
-                  <h5 class="card-title">{blog.title}</h5>
-                  <p class="card-text">{blog.description}</p>
-                  <a href="#" class="btn btn-primary">Read more...</a>
+              <div className="card">
+                <div className="card-header">{blog.date}</div>
+                <div className="card-body">
+                  <h5 className="card-title">{blog.title}</h5>
+                  <p className="card-text">{blog.description}</p>
+                  <a href="#" className="btn btn-primary">Read more... | _id = {blog._id}</a>
                 </div>
               </div>
 
@@ -38,11 +36,8 @@ function BlogList() {
               <br></br>
               {blog.mainBody} */}
 
-              {/* </div> */}
-              {/* <br></br> */}
-
             </div>
-          </div>
+          // </div>
 
         )
       })}
