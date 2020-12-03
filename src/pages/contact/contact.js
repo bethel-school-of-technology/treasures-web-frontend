@@ -3,52 +3,21 @@ import './contact.css';
 
 
 class MyForm extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            username: '',
-            email: 'string',
-        };
-    }
-    mySubmitHandler = (event) => {
-        event.preventDefault();
-        let email = this.state.email;
-        if (!String(email)) {
-            alert("Your email must be a valid email address.");
-        }
-    }
-    myChangeHandler = (event) => {
-        let nam = event.target.name;
-        let val = event.target.value;
-        this.setState({ [nam]: val });
-    }
     render() {
         return (
-            <div class="center">
-                <form onSubmit={this.mySubmitHandler}>
-                    <h1>Hello {this.state.username}</h1>
-                    <p>Enter your name:</p>
-                    <input
-                        type='text'
-                        name='username'
-                        onChange={this.myChangeHandler}
-                    />
-                    <p>Enter your email:</p>
-                    <input
-                        type='string'
-                        name='email'
-                    />
-                    <br />
-                    <br />
-                    <textarea placeholder="Place your questions or comments in here."></textarea>
-                    <br />
-                    <br />
-                    <input class="submit-button" type='submit' />
+            <div class="contact">
+                <form action="../email-form.php" method="post">
+                    <label>Name:</label><br />
+                    <input type="text" name="name"></input><br />
+                    <label>Email Address:</label><br />
+                    <input type="text" name="email-address"></input><br />
+                    <label>Questions or Comments:</label><br />
+                    <textarea placeholder="Please type in here." name="feedback" cols="50" rows="10"></textarea><br />
+                    <input class="submit-button" type="submit" name="send" value="Submit"></input>
                 </form>
             </div>
-        );
+        )
     }
 }
-
 
 export default MyForm;
