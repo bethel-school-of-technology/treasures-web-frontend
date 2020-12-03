@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogList from './BlogList';
 import BlogComp from './blogComp';
+import './blogs.css'
 
 function Blogs() {
   return (
