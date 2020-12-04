@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 function BlogComp() {
     const history = useHistory();
-    
+
     var [title, setTitle] = useState("");
     var [description, setDescription] = useState("");
     var [mainBody, setMainBody] = useState("");
@@ -45,6 +45,11 @@ function BlogComp() {
                 <input type="text" onChange={e => setDate(e.target.value)} />
                 <input type="submit" />
             </form>
+
+            <div>
+                <br></br>
+                Not yet returning to blogs page once new blog has been created.
+            </div>
         </div>
     )
 }

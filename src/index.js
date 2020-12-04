@@ -22,7 +22,7 @@ const Pages = () => (
     <Route path="/Contact" component={MyForm} />
     <Route path="/Blogs" component={Blogs} />
     <Route path="/BlogComp" component={BlogComp} />
-    <Route path="/BlogDetail" component={BlogDetail} />
+    <Route path="/BlogDetail/:id" component={BlogDetail} />
     <Route path="/Declaration" component={myDeclaration} />
     <Route path="/Hearts" component={ourHearts} />
     <Route path="/Mentoring" component={myMentor} />

@@ -18,7 +18,6 @@ function BlogList() {
     <div className="blogContainer">
       {blogs.map((blog, idx) => {
         return (
-          // <div >
 
             <div key={idx} className={idx}>
 
@@ -28,17 +27,20 @@ function BlogList() {
                   <h5 className="card-title">{blog.title}</h5>
                   <p className="card-text">{blog.description}</p>
                   
-                  <Link to="./blogDetail">Detail Blogs</Link>
-                  <a href="./blogDetail" className="btn btn-primary">Read more... | _id = {blog._id}</a>
+                  {/* <Link to={`/users/${user.id}`} activeClassName="active">{user.name}</Link> */}
+
+                  {/* This code willcorrectly request a specific blog by id but does not change page */}
+                  {/* <a href={`/blogs/${blog._id}`} className="btn btn-primary">Read more...</a> */}
+
+                  {/* This changes to the blo details page but does not pass the id */}
+                  <a href={`/blogDetail/${blog._id}`} className="btn btn-primary">Read more...</a>
+
                 </div>
               </div>
 
-              {/* {blog._id} | {blog.title} | {blog.description} | {blog.date}
-              <br></br>
-              {blog.mainBody} */}
+              {/* {blog._id} | {blog.title} | {blog.description} | {blog.date} | {blog.mainBody} */}
 
             </div>
-          // </div>
 
         )
       })}
