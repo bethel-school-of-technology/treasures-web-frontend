@@ -1,28 +1,16 @@
 import React, { useState, useEffect } from 'react';
-
+import { useHistory } from 'react-router-dom';
 
 function BlogComp() {
-
-    var [blogs, setBlogs] = useState([]);
-    var [blog, setBlog] = useState({});
+    const history = useHistory();
 
     var [title, setTitle] = useState("");
     var [description, setDescription] = useState("");
     var [mainBody, setMainBody] = useState("");
     var [date, setDate] = useState("");
 
-    useEffect(() => {
-        const getAllBlogs = async () => {
-            let blogsData = await fetch("http://localhost:4000/blogs/")
-            let blg = await blogsData.json(); // used blg not blog so as not confuse with the blog var set at the top.
-            console.log(blg.data.blogs);
-            setBlogs(blg.data.blogs);
-        }
-        getAllBlogs();
-    }, [])
-
     const handleSubmit = async () => {
-        let newBlogData = await fetch("http://localhost:4000/blogs/", {
+        let newBlogData = await fetch("http://localhost:4000/blogs/", { 
             //
             // ----------------  Need to add some data checking that all fields have data and that the date field is correctly formatted.
             //
@@ -32,10 +20,20 @@ function BlogComp() {
         })
         let newBlog = newBlogData.json();
         console.log(newBlog);
+
+        history.push("/blogs"); // trying to redirect to the blogs page ---------- NOT WORKING !!!
     }
 
     return (
         <div className="App">
+            {/* These lines move the form down below the navbar */}
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            
             <form onSubmit={handleSubmit}>
                 <lable>Title: </lable>
                 <input type="text" onChange={e => setTitle(e.target.value)} />
@@ -47,10 +45,13 @@ function BlogComp() {
                 <input type="text" onChange={e => setDate(e.target.value)} />
                 <input type="submit" />
             </form>
+
+            <div>
+                <br></br>
+                Not yet returning to blogs page once new blog has been created.
+            </div>
         </div>
     )
-
 }
-
 
 export default BlogComp;
