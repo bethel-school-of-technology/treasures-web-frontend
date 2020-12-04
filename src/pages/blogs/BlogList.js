@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 function BlogList() {
 
@@ -13,8 +14,6 @@ function BlogList() {
     getAllBlogs();
   }, [])
 
-  // ------------- Need to validate if the className on the div is App or should be different such as Blog? 
-  // 
   return (
     <div className="blogContainer">
       {blogs.map((blog, idx) => {
@@ -28,7 +27,9 @@ function BlogList() {
                 <div className="card-body">
                   <h5 className="card-title">{blog.title}</h5>
                   <p className="card-text">{blog.description}</p>
-                  <a href="#" className="btn btn-primary">Read more... | _id = {blog._id}</a>
+                  
+                  <Link to="./blogDetail">Detail Blogs</Link>
+                  <a href="./blogDetail" className="btn btn-primary">Read more... | _id = {blog._id}</a>
                 </div>
               </div>
 

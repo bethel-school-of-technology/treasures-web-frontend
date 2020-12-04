@@ -6,6 +6,8 @@ import Nav from './components/nav';
 import MyForm from './pages/contact/contact';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Blogs from './pages/blogs/blogs';
+import BlogComp from './pages/blogs/blogComp';
+import BlogDetail from './pages/blogs/blogDetail';
 import myDeclaration from './pages/declaration/declaration';
 import ourHearts from './pages/hearts/hearts';
 import myMentor from './pages/mentoring/mentoring';
@@ -19,6 +21,8 @@ const Pages = () => (
     <Route exact path="/" component={App} />
     <Route path="/Contact" component={MyForm} />
     <Route path="/Blogs" component={Blogs} />
+    <Route path="/BlogComp" component={BlogComp} />
+    <Route path="/BlogDetail" component={BlogDetail} />
     <Route path="/Declaration" component={myDeclaration} />
     <Route path="/Hearts" component={ourHearts} />
     <Route path="/Mentoring" component={myMentor} />
