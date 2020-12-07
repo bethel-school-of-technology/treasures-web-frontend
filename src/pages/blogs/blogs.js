@@ -1,6 +1,5 @@
 import React from 'react';
 import BlogList from './BlogList';
-import BlogComp from './blogComp';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import './blogs.css'
@@ -16,6 +15,8 @@ function Blogs() {
 
       <div >
         <Link to="/BlogComp">Create a new blog</Link>
+        <Link to="/adminBlogList">Administration</Link>
+        {/* <Link to="/BlogUpdate">Update an existing blog</Link> */}
       </div>
 
       <BlogList />

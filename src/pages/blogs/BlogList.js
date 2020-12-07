@@ -26,20 +26,10 @@ function BlogList() {
                 <div className="card-body">
                   <h5 className="card-title">{blog.title}</h5>
                   <p className="card-text">{blog.description}</p>
-                  
-                  {/* <Link to={`/users/${user.id}`} activeClassName="active">{user.name}</Link> */}
-
-                  {/* This code willcorrectly request a specific blog by id but does not change page */}
-                  {/* <a href={`/blogs/${blog._id}`} className="btn btn-primary">Read more...</a> */}
-
-                  {/* This changes to the blo details page but does not pass the id */}
                   <a href={`/blogDetail/${blog._id}`} className="btn btn-primary">Read more...</a>
-
                 </div>
               </div>
-
               {/* {blog._id} | {blog.title} | {blog.description} | {blog.date} | {blog.mainBody} */}
-
             </div>
 
         )

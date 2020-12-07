@@ -31,18 +31,18 @@ function BlogComp() {
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
-            <br></br>
             
             <form onSubmit={handleSubmit}>
-                <lable>Title: </lable>
-                <input type="text" onChange={e => setTitle(e.target.value)} />
-                <lable>Description: </lable>
-                <input type="text" onChange={e => setDescription(e.target.value)} />
-                <lable>Main Body: </lable>
-                <input type="text" onChange={e => setMainBody(e.target.value)} />
-                <lable>Date: </lable>
-                <input type="text" onChange={e => setDate(e.target.value)} />
+                <lable>Title: </lable><br></br>
+                <input type="text" onChange={e => setTitle(e.target.value)} size="76"/><br></br>
+                <lable>Description: </lable><br></br>
+                <textarea onChange={e => setDescription(e.target.value)} rows="2" cols="75"></textarea><br></br>
+                {/* <input type="text" onChange={e => setDescription(e.target.value)} size="60"/><br></br> */}
+                <lable>Main Body: </lable><br></br>
+                <textarea  onChange={e => setMainBody(e.target.value)} rows="10" cols="75"></textarea><br></br>
+                {/* <texta type="text" onChange={e => setMainBody(e.target.value)} /><br></br> */}
+                <lable>Date: </lable><br></br>
+                <input type="date" onChange={e => setDate(e.target.value)} /><br></br><br></br>
                 <input type="submit" />
             </form>
 
