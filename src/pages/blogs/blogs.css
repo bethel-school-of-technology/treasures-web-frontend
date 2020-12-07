@@ -3,9 +3,14 @@
   background: rgba(144, 226, 37, 0.8);
   margin: 1rem;
   padding: 1rem 3rem;
-  width: 100%;
+  /* width: 100%; */
 }
-
+.adminBlogContainer {
+  background: rgb(255, 240, 240);
+  margin: 1rem;
+  padding: 1rem 3rem;
+  /* width: 100%; */
+}
 .card {
   background: rgba(226, 37, 201, 0.8);
   margin: 1rem;
