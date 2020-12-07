@@ -6,8 +6,10 @@ import Nav from './components/nav';
 import MyForm from './pages/contact/contact';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Blogs from './pages/blogs/blogs';
+import AdminBlogs from './pages/blogs/adminBlogs';
 import BlogComp from './pages/blogs/blogComp';
 import BlogDetail from './pages/blogs/blogDetail';
+import BlogDelete from './pages/blogs/blogDelete';
 import BlogUpdate from './pages/blogs/blogUpdate';
 import myDeclaration from './pages/declaration/declaration';
 import ourHearts from './pages/hearts/hearts';
@@ -22,9 +24,11 @@ const Pages = () => (
     <Route exact path="/" component={App} />
     <Route path="/Contact" component={MyForm} />
     <Route path="/Blogs" component={Blogs} />
+    <Route path="/AdminBlogs" component={AdminBlogs} />
     <Route path="/BlogComp" component={BlogComp} />
     <Route path="/BlogDetail/:id" component={BlogDetail} />
     <Route path="/BlogUpdate/:id" component={BlogUpdate} />
+    <Route path="/BlogDelete/:id" component={BlogDelete} />
     <Route path="/Declaration" component={myDeclaration} />
     <Route path="/Hearts" component={ourHearts} />
     <Route path="/Mentoring" component={myMentor} />

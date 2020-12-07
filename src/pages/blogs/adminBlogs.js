@@ -1,11 +1,11 @@
 import React from 'react';
-import BlogList from './BlogList';
+import AdminBlogList from './adminBlogList';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import './blogs.css'
-import AdminBlogList from './adminBlogList';
 
-function Blogs() {
+
+function AdminBlogs() {
   return (
     <div className="App">
 
@@ -15,20 +15,16 @@ function Blogs() {
       <br></br>
 
       <div >
-
-        <Link to="/adminBlogs">Administration</Link>
+        <Link to="/BlogComp">Create a new blog</Link>
+        {/* <Link to="/BlogComp">Create a new blog</Link> */}
+        {/* <Link to="/adminBlogList">Administration</Link> */}
         {/* <Link to="/BlogUpdate">Update an existing blog</Link> */}
       </div>
 
-      <BlogList />
-      {/* <AdminBlogList /> */}
-
-      {/* <hr></hr>
-      <br></br>
-      <BlogComp /> */}
+      <AdminBlogList />
 
     </div>
   )
 }
 
-export default Blogs;
+export default AdminBlogs;

@@ -33,16 +33,16 @@ function BlogComp() {
             <br></br>
             
             <form onSubmit={handleSubmit}>
-                <lable>Title: </lable><br></br>
-                <input type="text" onChange={e => setTitle(e.target.value)} size="76"/><br></br>
-                <lable>Description: </lable><br></br>
-                <textarea onChange={e => setDescription(e.target.value)} rows="2" cols="75"></textarea><br></br>
+                <lable for="titleN" >Title: </lable><br></br>
+                <input type="text" id="titleN" name="titleN" onChange={e => setTitle(e.target.value)} size="76"/><br></br>
+                <lable for="descN" >Description: </lable><br></br>
+                <textarea id="descN" name="descN" onChange={e => setDescription(e.target.value)} rows="2" cols="75"></textarea><br></br>
                 {/* <input type="text" onChange={e => setDescription(e.target.value)} size="60"/><br></br> */}
-                <lable>Main Body: </lable><br></br>
-                <textarea  onChange={e => setMainBody(e.target.value)} rows="10" cols="75"></textarea><br></br>
+                <lable for="bodyN" >Main Body: </lable><br></br>
+                <textarea id="bodyN" name="bodyN" onChange={e => setMainBody(e.target.value)} rows="10" cols="75"></textarea><br></br>
                 {/* <texta type="text" onChange={e => setMainBody(e.target.value)} /><br></br> */}
-                <lable>Date: </lable><br></br>
-                <input type="date" onChange={e => setDate(e.target.value)} /><br></br><br></br>
+                <lable for="dateN" >Date: </lable><br></br>
+                <input id="dateN" name="dateN" type="date" onChange={e => setDate(e.target.value)} /><br></br><br></br>
                 <input type="submit" />
             </form>
 

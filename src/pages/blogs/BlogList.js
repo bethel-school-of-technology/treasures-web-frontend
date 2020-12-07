@@ -18,9 +18,7 @@ function BlogList() {
     <div className="blogContainer">
       {blogs.map((blog, idx) => {
         return (
-
             <div key={idx} className={idx}>
-
               <div className="card">
                 <div className="card-header">{blog.date}</div>
                 <div className="card-body">
@@ -31,11 +29,11 @@ function BlogList() {
               </div>
               {/* {blog._id} | {blog.title} | {blog.description} | {blog.date} | {blog.mainBody} */}
             </div>
-
         )
       })}
     </div>
   )
+  
 }
 
 export default BlogList;
