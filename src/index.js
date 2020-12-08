@@ -15,11 +15,13 @@ import myDeclaration from './pages/declaration/declaration';
 import ourHearts from './pages/hearts/hearts';
 import myMentor from './pages/mentoring/mentoring';
 import Resources from './pages/resources/resources';
+import Whole from './pages/wholeness/wholeness';
 import Footer from './components/Footer';
 import './components/nav.css';
 
 const Pages = () => (
   <Router>
+    <Nav />
     <hr />
     <Route exact path="/" component={App} />
     <Route path="/Contact" component={MyForm} />
@@ -33,7 +35,8 @@ const Pages = () => (
     <Route path="/Hearts" component={ourHearts} />
     <Route path="/Mentoring" component={myMentor} />
     <Route path="/Resources" component={Resources} />
-    <Nav />
+    <Route path="/Wholeness" component={Whole} />
+    
     <Footer />
 
 
