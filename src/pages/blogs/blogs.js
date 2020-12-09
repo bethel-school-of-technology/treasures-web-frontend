@@ -1,9 +1,11 @@
 import React from 'react';
 import BlogList from './BlogList';
+
+// When Router and Route are removed the link fails ???????????????????????????????????
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import './blogs.css'
-import AdminBlogList from './adminBlogList';
+// import AdminBlogList from './adminBlogList';
 
 function Blogs() {
   return (
@@ -15,17 +17,10 @@ function Blogs() {
       <br></br>
 
       <div >
-
         <Link to="/adminBlogs">Administration</Link>
-        {/* <Link to="/BlogUpdate">Update an existing blog</Link> */}
       </div>
 
       <BlogList />
-      {/* <AdminBlogList /> */}
-
-      {/* <hr></hr>
-      <br></br>
-      <BlogComp /> */}
 
     </div>
   )

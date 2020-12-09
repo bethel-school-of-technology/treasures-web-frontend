@@ -16,9 +16,6 @@ function AdminBlogs() {
 
       <div >
         <Link to="/BlogComp">Create a new blog</Link>
-        {/* <Link to="/BlogComp">Create a new blog</Link> */}
-        {/* <Link to="/adminBlogList">Administration</Link> */}
-        {/* <Link to="/BlogUpdate">Update an existing blog</Link> */}
       </div>
 
       <AdminBlogList />
