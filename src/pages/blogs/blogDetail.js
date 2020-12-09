@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router";
 
 
+// -------------------------------- Warning react hook useEffect has a missing dependency 'id' ------- ????????
 function BlogDetail() {
-
   let { id } = useParams();
   var [blog, setBlog] = useState([]);
   useEffect(() => {
@@ -14,13 +14,7 @@ function BlogDetail() {
       setBlog(blg.data.blog);
     }
     getBlogById();
-  }, [])
-
-  {/* <Link to={`/users/${user.id}`} activeClassName="active">{user.name}</Link>
-<a href="/users/123" class="active">Michael</a>
-<a href="#/users/123">Michael</a>
-<Link to={`/users/${user.id}`} activeClassName="current">{user.name}</Link>
-<Link to="/users" style={{color: 'white'}} activeStyle={{color: 'red'}}>Users</Link> */}
+  }, [id])
 
   return (
     <div className="blogContainer">

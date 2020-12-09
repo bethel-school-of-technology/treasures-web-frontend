@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 function BlogList() {
-
   var [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const getAllBlogs = async () => {
@@ -33,7 +32,6 @@ function BlogList() {
       })}
     </div>
   )
-  
 }
 
 export default BlogList;

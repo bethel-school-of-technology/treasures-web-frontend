@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
+
 function BlogComp() {
     const history = useHistory();
-
     var [title, setTitle] = useState("");
     var [description, setDescription] = useState("");
     var [mainBody, setMainBody] = useState("");
@@ -20,8 +20,7 @@ function BlogComp() {
         })
         let newBlog = newBlogData.json();
         console.log(newBlog);
-
-        history.push("/blogs"); // trying to redirect to the blogs page ---------- NOT WORKING !!!
+        history.push("/Blogs"); // trying to redirect to the blogs page -- NOT WORKING ---------------- ??????????????????
     }
 
     return (
@@ -31,7 +30,6 @@ function BlogComp() {
             <br></br>
             <br></br>
             <br></br>
-            
             <form onSubmit={handleSubmit}>
                 <lable for="titleN" >Title: </lable><br></br>
                 <input type="text" id="titleN" name="titleN" onChange={e => setTitle(e.target.value)} size="76"/><br></br>
@@ -45,7 +43,6 @@ function BlogComp() {
                 <input id="dateN" name="dateN" type="date" onChange={e => setDate(e.target.value)} /><br></br><br></br>
                 <input type="submit" />
             </form>
-
             <div>
                 <br></br>
                 Not yet returning to blogs page once new blog has been created.
