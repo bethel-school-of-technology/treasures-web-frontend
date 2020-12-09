@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router";
 
-
 function BlogUpdate() {
 
   let { id } = useParams();
-  
   var [blog, setBlog] = useState([]);
   var [title, setTitle] = useState("");
   var [description, setDescription] = useState("");
   var [mainBody, setMainBody] = useState("");
   var [date, setDate] = useState("");
 
+// -------------------------------- Warning react hook useEffect has a missing dependency 'id' ------- ????????
   useEffect(() => {
     const getBlogById = async () => {
       let blogData = await fetch(`http://localhost:4000/blogs/${id}`)
@@ -20,8 +19,7 @@ function BlogUpdate() {
       setBlog(blg.data.blog);
     }
     getBlogById();
-  }, [])
-
+  }, [id])
 
   const handleSubmit = async () => {
     let newBlogData = await fetch(`http://localhost:4000/blogs/${id}`, { 
@@ -38,14 +36,11 @@ function BlogUpdate() {
 
   return (
     <div className="blogContainer">
-
       <br></br>
       <br></br>
       <br></br>
       <br></br>
       <p>Blog Update for ID: {id}</p>
-
-
       <form onSubmit={handleSubmit}>
         <lable for="titleN" >Title: </lable><br></br>
         <input type="text" id="titleN" name="titleN" onChange={e => setTitle(e.target.value)} size="76" value={blog.title}/><br></br>
@@ -59,21 +54,6 @@ function BlogUpdate() {
         <input id="dateN" name="dateN"  type="date" onChange={e => setDate(e.target.value)} value={blog.date}/><br></br><br></br>
         <input type="submit" />
       </form>
-
-
-      {/* <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <p>Title: {blog.title}</p>
-      <p>Description: {blog.description}</p>
-      <p>Main Body: {blog.mainBody}</p>
-
-
-      <a href={`/blogs`} className="btn btn-primary">Return to Blogs</a> */}
-
-
     </div>
   )
 }
