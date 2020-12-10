@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router";
+import ReactHtmlParser from 'react-html-parser';
 
-
-// -------------------------------- Warning react hook useEffect has a missing dependency 'id' ------- ????????
 function BlogDetail() {
   let { id } = useParams();
   var [blog, setBlog] = useState([]);
@@ -16,6 +15,10 @@ function BlogDetail() {
     getBlogById();
   }, [id])
 
+  const htmlTitle = `${blog.title}`;
+  const htmlDescription = `${blog.description}`;
+  const htmlMainBody = `${blog.mainBody}`;
+
   return (
     <div className="blogContainer">
       <br></br>
@@ -23,9 +26,15 @@ function BlogDetail() {
       <br></br>
       <br></br>
       <br></br>
-      <p>Title: {blog.title}</p>
-      <p>Description: {blog.description}</p>
-      <p>Main Body: {blog.mainBody}</p>
+      <div>
+        {ReactHtmlParser(htmlTitle)}
+      </div>
+      <div>
+        {ReactHtmlParser(htmlDescription)}
+      </div>      
+      <div>
+        {ReactHtmlParser(htmlMainBody)}
+      </div>
       <a href={`/blogs`} className="btn btn-primary">Return to Blogs</a>
     </div>
   )

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactHtmlParser from 'react-html-parser';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import { useHistory, useParams } from "react-router-dom";
 
@@ -14,39 +15,11 @@ function AdminBlogList() {
     getAllBlogs();
   }, [])
 
-  //   const handleDelete = async () => {
-  //     let deleteBlog = await fetch("http://localhost:4000/blogs/", { 
-  //         method: "DELETE",
-  //         headers: { 'Content-Type': 'application/json' },
-  //         body: JSON.stringify({ title, description, mainBody, date })
-  //     })
-  //     let newBlog = newBlogData.json();
-  //     console.log(newBlog);
-  // }
-
-  // const handleDelete = async (e) =>{
-  //   let url = `http://localhost:4000/blogs/${blog._id}`;
-  //   let data = await fetch(url, {
-  //       method: "DELETE",
-        // credentials: 'include',
-        // headers: {
-        //     'Content-Type': 'application/json'
-        // },
-        // body: JSON.stringify({content, quoted})
-    // })
-    // data = await data.json();
-    // setMessage(data.message);
-    // if(data.message == "Successfully deleted"){
-    //   history.push('/')
-    // }
-  //}
-
   return (
     <div className="adminBlogContainer">
       <table className="table table-striped">
         <thead>
           <tr>
-            {/* <th>#</th> */}
             <th>Date</th>
             <th>Title</th>
             <th>Edit</th>
@@ -56,11 +29,15 @@ function AdminBlogList() {
         <tbody>
           {
             blogs.map((blog, idx) => {
+              const htmlTitle = `${blog.title}`;
+              const dateString = blog.date.substring(0, 10);
               return (
                 <tr key={idx} >
-                  {/* <td>{idx + 1}</td> */}
-                  <td>{blog.date}</td>
-                  <td>{blog.title}</td>
+                  {/* <p> {{ date | date:'dd MMMM yyyy'}} </p> */}
+                   {/* var n = d.toDateString(); */}
+
+                  <td>{dateString}</td>
+                  <td>{ReactHtmlParser(htmlTitle)}</td>
                   <td>
                     <a href={`/blogUpdate/${blog._id}`} className="btn btn-outline-primary">
                       <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-pencil" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
