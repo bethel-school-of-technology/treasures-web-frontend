@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import ReactHtmlParser from 'react-html-parser';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 
 function BlogList() {
   var [blogs, setBlogs] = useState([]);
@@ -16,18 +18,20 @@ function BlogList() {
   return (
     <div className="blogContainer">
       {blogs.map((blog, idx) => {
+        const htmlTitle = `${blog.title}`;
+        const htmlDescription = `${blog.description}`;
+        const dateString = blog.date.substring(0, 10);
         return (
-            <div key={idx} className={idx}>
-              <div className="card">
-                <div className="card-header">{blog.date}</div>
-                <div className="card-body">
-                  <h5 className="card-title">{blog.title}</h5>
-                  <p className="card-text">{blog.description}</p>
-                  <a href={`/blogDetail/${blog._id}`} className="btn btn-primary">Read more...</a>
-                </div>
+          <div key={idx} className={idx}>
+            <div className="card">
+              <div className="card-header">{dateString}</div>
+              <div className="card-body">
+                <h5 className="card-title">{ReactHtmlParser(htmlTitle)}</h5>
+                <p className="card-text">{ReactHtmlParser(htmlDescription)}</p>
+                <a href={`/blogDetail/${blog._id}`} className="btn btn-primary">Read more...</a>
               </div>
-              {/* {blog._id} | {blog.title} | {blog.description} | {blog.date} | {blog.mainBody} */}
             </div>
+          </div>
         )
       })}
     </div>
