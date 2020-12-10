@@ -1,0 +1,3 @@
+peterwaller@Karens-MBP treasures-web-frontend % npm install react-html-parser
+npm WARN tsutils@3.17.1 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+npm WARN react-html-parser@2.0.2 requires a peer of react@^0.14.0 || ^15.0.0 || ^16.0.0-0 but none is installed. You must install peer dependencies yourself.

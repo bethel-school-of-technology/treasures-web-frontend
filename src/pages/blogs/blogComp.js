@@ -3,13 +3,14 @@ import { useHistory } from 'react-router-dom';
 
 
 function BlogComp() {
-    const history = useHistory();
+    let history = useHistory();
     var [title, setTitle] = useState("");
     var [description, setDescription] = useState("");
     var [mainBody, setMainBody] = useState("");
     var [date, setDate] = useState("");
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
+        e.preventDefault() // used for the history.push at the end of this section of code
         let newBlogData = await fetch("http://localhost:4000/blogs/", { 
             //
             // ----------------  Need to add some data checking that all fields have data and that the date field is correctly formatted.
@@ -20,7 +21,7 @@ function BlogComp() {
         })
         let newBlog = newBlogData.json();
         console.log(newBlog);
-        history.push("/Blogs"); // trying to redirect to the blogs page -- NOT WORKING ---------------- ??????????????????
+        history.push("/adminBlogs"); // trying to redirect to the blogs page -- NOT WORKING ---------------- ??????????????????
     }
 
     return (
@@ -43,10 +44,6 @@ function BlogComp() {
                 <input id="dateN" name="dateN" type="date" onChange={e => setDate(e.target.value)} /><br></br><br></br>
                 <input type="submit" />
             </form>
-            <div>
-                <br></br>
-                Not yet returning to blogs page once new blog has been created.
-            </div>
         </div>
     )
 }
