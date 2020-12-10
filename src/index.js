@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import Nav from './components/nav';
 import MyForm from './pages/contact/contact';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Blogs from './pages/blogs/blogs';
 import myDeclaration from './pages/declaration/declaration';
 import ourHearts from './pages/hearts/hearts';
