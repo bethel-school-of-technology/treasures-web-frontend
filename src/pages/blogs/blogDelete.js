@@ -23,7 +23,7 @@ function BlogDelete() {
       <br></br>
       <br></br>
       <br></br>
-      <p>Got to the delete page for: {id}</p>
+      <p>Go to the delete page for: {id}</p>
       <button onClick={handleDelete} type="button" className="btn btn-primary">Are you sure?</button>
     </div>
   )
