@@ -4,7 +4,7 @@ import './declaration.css';
 class myDeclaration extends React.Component {
     render() {
         return (
-            <div class="declaration">
+            <div className="declaration">
                 <h1>Treasures Declarations</h1>
             </div>
         )

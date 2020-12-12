@@ -16,7 +16,12 @@ function BlogUpdate() {
       let blogData = await fetch(`http://localhost:4000/blogs/${id}`)
       let blg = await blogData.json(); // used blg not blog so as not confuse with the blog var set at the top.
       console.log(blg.data.blog);
-      setBlog(blg.data.blog);
+      
+      setTitle(blg.data.blog.title);
+      setDescription(blg.data.blog.description);
+      setMainBody(blg.data.blog.mainBody);
+      setDate(blg.data.blog.date);
+
     }
     getBlogById();
   }, [id]);
@@ -33,7 +38,7 @@ function BlogUpdate() {
         //
         method: "PUT",
         headers: { 'Content-Type': 'application/json',
-                   'Accept': 'application/json' },
+                    'Accept': 'application/json' },
         body: JSON.stringify({ title, description, mainBody, date })
     })
     let newBlog = newBlogData.json();

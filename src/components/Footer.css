@@ -1,4 +1,4 @@
-/* #footer {
+ .footer {
     background-color: rgb(90, 156, 145);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
@@ -8,10 +8,6 @@
     width: 100%;
     color: rgb(245, 168, 168);
     text-align: center;
-    
-}
+ }
 
-.copyright {
-    background-color: rgb(30, 86, 122);
-    text-align: center;
-} */
+
