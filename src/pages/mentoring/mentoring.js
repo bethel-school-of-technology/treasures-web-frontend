@@ -4,7 +4,7 @@ import './mentoring.css';
 class myMentor extends React.Component {
     render() {
         return (
-            <div class="mentoring">
+            <div className="mentoring">
                 <h1>Treasures Mentoring</h1>
                 <p>
                     Hello, this is where we put our Mentoring Services at.

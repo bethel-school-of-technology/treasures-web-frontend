@@ -4,7 +4,7 @@ import './resources.css';
 class Resources extends React.Component {
     render() {
         return (
-            <div class="resources">
+            <div className="resources">
                 <h1>Treasures Resources</h1>
             </div>
         )
