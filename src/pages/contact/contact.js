@@ -5,7 +5,7 @@ import './contact.css';
 class MyForm extends React.Component {
     render() {
         return (
-            <div class="center">
+            <div className="center">
                 <form>
                     <label>Name:</label><br />
                     <input type="text" name="name"></input><br />

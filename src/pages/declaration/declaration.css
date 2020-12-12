@@ -1,5 +1,6 @@
 .declaration {
     text-align: center;
-    color: aqua;
-    background-color: orange;
+    background-color: rgb(161, 207, 142);
+    color: rgb(250, 232, 200);
+    padding-top: 80px;
 }

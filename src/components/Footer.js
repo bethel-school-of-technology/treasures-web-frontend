@@ -7,42 +7,42 @@ const year = currentDate.getFullYear();
 class Footer extends React.Component {
   render() {
     return (
-      <footer class="footer">
-        <div class="container">
-          <div class="row row-cols-3 order-first">
-            <div class="footer-col col-lg-3">
-              <h3 class="col-title">About</h3>
-              <ul class="footer-menu list-unstyled">
+      <footer className="footer">
+        <div className="container">
+          <div className="row row-cols-3 order-first">
+            <div className="footer-col col-lg-3">
+              <h3 className="col-title">About</h3>
+              <ul className="footer-menu list-unstyled">
                 <li>
-                  <Link class="text-link" href="#">
+                  <Link className="text-link" href="#">
                     Our Heart
                   </Link>
                 </li>
                 <li>
-                  <Link class="text-link" href="#">
+                  <Link className="text-link" href="#">
                     Resources
                   </Link>
                 </li>
                 <li>
-                  <Link class="text-link" href="#">
+                  <Link className="text-link" href="#">
                     Declarations
                   </Link>{" "}
-                  <span class="badge md-info alert">Download</span>
+                  <span className="badge md-info alert">Download</span>
                 </li>
               </ul>
             </div>
 
-            <div class="footer-col col-lg-3">
-              <div class="divider"></div>
+            <div className="footer-col col-lg-3">
+              <div className="divider"></div>
               <br />
               <br />
-              <small class="copyright">Treasures @ {year} </small>
+              <small className="copyright">Treasures @ {year} </small>
             </div>
-            <div class="footer-col col-lg-3 order-last">
-              <h3 class="col-title">Contact</h3>
-              <ul class="footer-menu list-unstyled">
+            <div className="footer-col col-lg-3 order-last">
+              <h3 className="col-title">Contact</h3>
+              <ul className="footer-menu list-unstyled">
                 <li>
-                  <Link class="text-link" href="#">
+                  <Link className="text-link" href="#">
                     Contact Us
                   </Link>
                 </li>

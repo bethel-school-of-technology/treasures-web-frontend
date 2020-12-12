@@ -5,7 +5,7 @@ class Whole extends React.Component {
 
     render() {
         return (
-            <div class="wholeness">
+            <div className="wholeness">
                 <h1>Wholeness Events</h1>
             </div>
         )
