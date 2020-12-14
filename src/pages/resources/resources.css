@@ -1,6 +1,35 @@
-.resources {
+
+/* .resources {
     text-align: center;
     color: white;
     background-color: darkslategrey;
-    padding-top: 80px;
+} */
+
+/* * {
+    text-align: left;
+  } */
+
+.resourcesContainer {
+    /* background: rgba(142, 180, 238, 0.8); */
+    margin-top: 6rem;
+    /* padding: 1rem 1rem; */
+    text-align: left;
+    color: green;
+    background-color: lightgray;
+    width: 100%;
+}
+
+/* .resourcesContainer .card{
+    width: 14rem;
+} */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.bookSelf{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: gray;
 }

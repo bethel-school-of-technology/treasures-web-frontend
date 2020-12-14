@@ -21,7 +21,8 @@ import './components/nav.css';
 
 const Pages = () => (
   <Router>
-    <hr />
+        <Nav />
+    {/* <hr /> */}
     <Route exact path="/" component={App} />
     <Route path="/Contact" component={MyForm} />
     <Route path="/Blogs" component={Blogs} />
@@ -35,7 +36,7 @@ const Pages = () => (
     <Route path="/Mentoring" component={myMentor} />
     <Route path="/Resources" component={Resources} />
     <Route path="/Wholeness" component={Whole} />
-    <Nav />
+
     <Footer />
 
 
