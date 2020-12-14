@@ -14,7 +14,7 @@
 .card {
   background: rgba(226, 37, 201, 0.8);
   margin: 1rem;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   /* width: 75%; */
 }
 .card-header {
@@ -29,5 +29,5 @@
 
 .card-text {
   background: rgba(6, 133, 90, 0.8);
-  text-align: justify;
+  text-align: left;
 }
