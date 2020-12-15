@@ -1,13 +1,19 @@
  .footer {
-    background-color: rgb(90, 156, 145);
+    text-align: center;
+    background-color: rgb(133, 172, 151);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 100;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    color: rgb(245, 168, 168);
-    text-align: center;
+    height: auto;
+    color: rgb(247, 188, 188);
+    padding: 2rem;
+    
  }
 
+.navbar-brand-footer {
+   margin-bottom: 2rem;
+}
 
