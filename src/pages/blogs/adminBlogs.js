@@ -6,13 +6,10 @@ import './blogs.css'
 
 function AdminBlogs() {
   return (
-    <div className="App">
-      {/* These lines simply start the list lower down the page as the navbar is floating */}
-      <br></br>
-      <hr></hr>
-      <br></br>
+    <div className="blogs">
+      {/* --------------------------- This link should only appear if the user is logged in and authorised. */}
       <div >
-        <Link to="/BlogComp">Create a new blog</Link>
+        <Link className="btn btn-primary" to="/BlogComp">Create a new blog</Link>
       </div>
       <AdminBlogList />
     </div>

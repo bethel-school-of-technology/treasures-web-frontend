@@ -20,18 +20,13 @@ function BlogDetail() {
   const htmlMainBody = `${blog.mainBody}`;
 
   return (
-    <div className="blogContainer">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+    <div className="blogs">
       <div>
-        {ReactHtmlParser(htmlTitle)}
+        <h3>{ReactHtmlParser(htmlTitle)}</h3>
       </div>
       <div>
         {ReactHtmlParser(htmlDescription)}
-      </div>      
+      </div>
       <div>
         {ReactHtmlParser(htmlMainBody)}
       </div>

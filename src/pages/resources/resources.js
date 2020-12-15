@@ -10,7 +10,6 @@ import LetMeBe from '../../images/LetMeBe.jpg';
 import CoachingCover from '../../images/CoachingCover.jpg';
 import DareToDream from '../../images/DareToDream.jpg'
 import WhoAmI from '../../images/WhoAmI.jpg';
-
 import Encounters from '../../images/Encounters.jpg';
 
 

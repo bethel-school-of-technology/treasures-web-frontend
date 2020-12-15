@@ -6,13 +6,9 @@ import './blogs.css'
 
 function Blogs() {
   return (
-    <div className="App">
-      {/* These lines simply start the list lower down the page as the navbar is floating */}
-      <br></br>
-      <hr></hr>
-      <br></br>
+    <div className="blogs">
       <div >
-        <Link to="/adminBlogs">Administration</Link>
+        <Link className="btn btn-primary" to="/adminBlogs">Administration</Link>
       </div>
       <BlogList />
     </div>

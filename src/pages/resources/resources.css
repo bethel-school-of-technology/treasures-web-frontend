@@ -7,9 +7,12 @@
     width: 100%;
 }
 
-/* .resources .card{
-    width: 14rem;
-} */
+.resources .card{
+    background: plum;
+    margin: 0.5rem;
+    color: black;
+    /* width: 14rem; */
+}
 
 img {
     width: 100%;
