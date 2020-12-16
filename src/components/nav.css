@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +28,7 @@
     padding: 5px;
     text-decoration: none;
     /* display: flex; */
-}
+/* }
 
 .navBarLink {
    line-height: 80px;
@@ -49,4 +49,8 @@
     background: rgb(245, 194, 118);
     color: #fff;
     border-radius: 6px;
+} */
+.navbar-logo {
+    height: 80px;
+    width: auto;
 }
