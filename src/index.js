@@ -37,7 +37,7 @@ const Pages = () => (
     <Route path="/Resources" component={Resources} />
     <Route path="/Wholeness" component={Whole} />
 
-    {/* <Footer /> */}
+    <Footer />
 
 
   </Router>
