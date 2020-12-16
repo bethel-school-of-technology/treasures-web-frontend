@@ -25,12 +25,7 @@ function BlogComp() {
     }
 
     return (
-        <div className="App">
-            {/* These lines move the form down below the navbar */}
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+        <div className="blogContainer">
             <form onSubmit={handleSubmit}>
                 <lable for="titleN" >Title: </lable><br></br>
                 <input type="text" id="titleN" name="titleN" onChange={e => setTitle(e.target.value)} size="76"/><br></br>

@@ -47,10 +47,6 @@ function BlogUpdate() {
 
   return (
     <div className="blogContainer">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <p>Blog Update for ID: {id}</p>
       <form onSubmit={handleSubmit}>
         <lable for="titleN" >Title: </lable><br></br>
