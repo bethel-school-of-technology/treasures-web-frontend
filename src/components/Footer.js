@@ -39,8 +39,6 @@ class Footer extends React.Component {
               <br />
               <br />
               <div className="navbar-footer">
-                  {/* <a className="navbar-brand" href="/">Treasures</a> */}
-                  {/* <a className="navbar-brand" href="/"></a> */}
                   <img src={Logo} className="navbar-brand-footer" alt="Treasures Logo"></img>
                   {/* <img src={require("../public/TreasuresFinSub.png")}></img> */}
                   {/* <Link className="navbar-brand" to="public/TreasuresFinSub.png"></Link> */}
