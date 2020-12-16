@@ -9,17 +9,21 @@ import FaithHopeLove from '../../images/FaithHopeLove.jpg';
 import LetMeBe from '../../images/LetMeBe.jpg';
 import CoachingCover from '../../images/CoachingCover.jpg';
 import DareToDream from '../../images/DareToDream.jpg'
-import WhoAmI from '../../images/WhoAmI.jpg';
-
 import Encounters from '../../images/Encounters.jpg';
+import WhoAmI from '../../images/WhoAmI.jpg';
 
 
 function Resources() {
 
   const cardInfo = [
     { image: "../../images/TimesAndSeasons.jpg", header: "40 Day Christian Growth Journal", title: "Times and Season", text: "Perfect for change and Transition" },
-    { image: "/src/pages/images/MyTrueIdentity.jpg", header: "40 Day Christian Growth Journal", title: "My True Identity", text: "Perfect for deepening your awareness of who you truly are as God’s Child" },
-    { image: { IAmLoved }, title: "I Am Loved", header: "40 Day Christian Growth Journal", text: "Perfect for encountering God’s Love more fully and more personally" }
+    { image: "../../images/MyTrueIdentity.jpg", header: "40 Day Christian Growth Journal", title: "My True Identity", text: "Perfect for deepening your awareness of who you truly are as God’s Child" },
+    { image: { IAmLoved }, header: "40 Day Christian Growth Journal", title: "I Am Loved", text: "Perfect for encountering God’s Love more fully and more personally" },
+    { image: "../../images/PreciousAndBeautiful.jpg", header: "Prayer Journal", title: "Precious &amp; Beautiful", text: "Praying to know and live out your beauty" },
+    { image: "../../images/FaithHopeLove.jpg", header: "Prayer Journal", title: "Faith, Hope &amp; Love", text: "Praying to live this more and change our world" },
+    { image: "../../images/LetMeBe.jpg", header: "Prayer Journal", title: "Let Me Be…", text: "Praying into being a gift to the world" },
+    { image: "../../images/CoachingCover.jpg", header: "Growth Journal", title: "Life-Coaching Journal", text: "Over 12 Coaching Exercises that take you on a personal coaching journey" },
+    { image: "../../images/DareToDream.jpg", header: "Growth Journal", title: "Dreams Journal", text: "Inspiring Quotes, lined and blank pages for visioning and dreaming" }
   ];
 
   const renderCard = (card, index) => {
@@ -31,11 +35,10 @@ function Resources() {
       //     <Card.Text>{card.text}</Card.Text>
       //   </Card.Body>
       // </Card>
-      <div className="card" style={{ width: '20rem' }} key={index}>
+      <div className="card" key={index}>
         <div className="card-header">{card.header}</div>
         <img className="card-img-top" src={card.image} alt={"dummy text"}></img>
         {/* <img className="card-img-top" src={TimesAndSeasons} alt={"TimesAndSeasons"}></img> */}
-        {/* <img className="card-img-top" src="../../images/TimesAndSeasons.jpg" alt="Not Displaying?"></img> */}
         <div className="card-body">
           <h5 className="card-title">{card.title}</h5>
           <p className="card-text">{card.text}</p>
@@ -51,7 +54,9 @@ function Resources() {
 
 
       <h2>Looping through the cardRender</h2>
-      {cardInfo.map(renderCard)}
+      <div className="sideBySide">
+        {cardInfo.map(renderCard)}
+      </div>
 
 
       <hr></hr>
@@ -67,6 +72,7 @@ function Resources() {
               <div className="card-header">40 Day Growth Journal</div>
               <img className="card-img-top" src={TimesAndSeasons} alt={"TimesAndSeasons"}></img>
               {/* <img className="card-img-top" src="../../images/TimesAndSeasons.jpg" alt="Not Displaying?"></img> */}
+              {/* <img className="card-img-top" src="../../../public/images/TimesAndSeasons_cover-s.jpg" alt="Not Displaying?"></img> */}
               {/* <div className="card-header">First Book</div> */}
               <div className="card-body">
                 <h5 className="card-title">Times and Seasons</h5>

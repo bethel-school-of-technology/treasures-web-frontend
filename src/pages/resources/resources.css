@@ -1,17 +1,24 @@
 .resources {
     text-align: center;
     color: white;
-    background-color:  grey;
+    background-color: grey;
     padding: 1rem;
     /* margin-top: 6rem; */
     width: 100%;
 }
 
-.resources .card{
+.resources .card {
     background: plum;
     margin: 0.5rem;
     color: black;
-    /* width: 14rem; */
+    width: 18rem;
+}
+
+.sideBySide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 img {
@@ -19,7 +26,7 @@ img {
     height: auto;
 }
 
-.bookSelf{
+.bookSelf {
     padding: 1rem;
     margin: 1rem;
     background-color: gray;
