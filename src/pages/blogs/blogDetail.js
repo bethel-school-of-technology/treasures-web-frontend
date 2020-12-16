@@ -21,11 +21,6 @@ function BlogDetail() {
 
   return (
     <div className="blogContainer">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <div>
         {ReactHtmlParser(htmlTitle)}
       </div>

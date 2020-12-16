@@ -42,11 +42,6 @@ function BlogDelete() {
 
   return (
     <div className="blogContainer">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <p>{ReactHtmlParser(htmlTitle)}</p>
       <button onClick={handleDelete} type="button" className="btn btn-primary">Delete</button>
       &nbsp;&nbsp;&nbsp;

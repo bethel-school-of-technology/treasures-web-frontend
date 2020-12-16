@@ -1,6 +1,8 @@
-
 .blogContainer {
-  background: rgba(142, 180, 238, 0.8);
+  text-align: center;
+  color: white;
+  background-color: grey;
+  padding: 1rem;
   margin: 1rem;
   /* padding: 1rem 1rem; */
   /* width: 100%; */
@@ -11,23 +13,32 @@
   padding: 1rem 1rem;
   /* width: 100%; */
 }
-.card {
-  background: rgba(226, 37, 201, 0.8);
-  /* margin: 1rem; */
+.blogDetail{
+  background: lightyellow;
+  padding: 0.5rem;
+  color: black;
+  text-align: left;
+}
+
+.blogContainer .card {
+  background: paleturquoise;
+  margin: 0.5rem;
+  color: black;
   /* padding: 1rem 1rem; */
   /* width: 75%; */
 }
-.card-header {
-  background: rgba(166, 221, 203, 0.8);
+
+.blogs .card-header {
+  /* background: rgba(166, 221, 203, 0.8); */
   text-align: left;
 }
 
-.card-title {
-  background: rgba(128, 240, 203, 0.8);
+.blogs .card-title {
+  /* background: rgba(128, 240, 203, 0.8); */
   text-align: left;
 }
 
-.card-text {
-  background: rgba(6, 133, 90, 0.8);
+.blogs .card-text {
+  /* background: rgba(6, 133, 90, 0.8); */
   text-align: left;
 }

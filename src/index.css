@@ -12,9 +12,9 @@ code {
     monospace;
 }
 
-* {
+/* * {
   text-align: center;
-}
+} */
 
 .navBarLink {
   margin-right: 50px;
