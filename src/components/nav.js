@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Logo from "./../images/TreasuresFinSub.png";
+import Logo from "./../images/TreasuresFin.png";
 import "./nav.css";
 
 class nav extends React.Component {
@@ -43,9 +43,9 @@ class nav extends React.Component {
                         </Link>
                         {/* <img src={Logo} alt="Treasures Logo" className="navbar-logo"></img> */}
                     </div>
-                    <span className="navbar-text">
+                    {/* <span className="navbar-text">
                         Wholeness Through A Journey Of Love ...
-    </span>
+    </span> */}
 
                 </div>
             </nav>
