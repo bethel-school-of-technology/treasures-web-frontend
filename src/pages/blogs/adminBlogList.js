@@ -3,6 +3,16 @@ import ReactHtmlParser from 'react-html-parser';
 // import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import { useHistory, useParams } from "react-router-dom";
 
+function formatDate(date) {
+  if (date !== undefined && date !== "") {
+    var myDate = new Date(date);
+    var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",][myDate.getMonth()];
+    var str = myDate.getDate() + " " + month + " " + myDate.getFullYear();
+    return str;
+  }
+  return "";
+}
+
 function AdminBlogList() {
   var [blogs, setBlogs] = useState([]);
   useEffect(() => {
@@ -30,7 +40,8 @@ function AdminBlogList() {
           {
             blogs.map((blog, idx) => {
               const htmlTitle = `${blog.title}`;
-              const dateString = blog.date.substring(0, 10);
+              // const dateString = blog.date.substring(0, 10);
+              const dateString = formatDate(new Date(blog.date));
               return (
                 <tr key={idx} >
                   {/* <p> {{ date | date:'dd MMMM yyyy'}} </p> */}
