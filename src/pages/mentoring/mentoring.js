@@ -5,7 +5,7 @@ class myMentor extends React.Component {
     render() {
         return (
             <div className="mentoring">
-                <h2>Life-Jouneying</h2>
+                <h2>Life-Journeying</h2>
                 <p>As a qualified and experienced Life-Coach I have over 8 years experience with over 70 ladies in; Life-coaching, pastoral prayer ministry, Bethel Sozo ministry and mentoring. I offer "Life-Journeying" to a small number of ladies throughout the year. It is a hybrid Spirit-led ministry and I continue to be blessed and excited by the anointing that the sessions carry to bring freedom, vision, momentum and peace into many ladies lives.</p>
                 <p><b>So what is it like? </b>Well, for most its spiritual journeying where we include; creativity, talking and listening using counselling tools, spirit-led praying, coaching and even mentoring to help you move forward in one or many areas of your life. For some it is simply contemplative prayer with support and encouragement... for others it’s life-coaching which includes tools, questions, exercises and goal-setting to help you pursue a specific goal or dream. </p>
                 <p>Personally, I like to think of it as being your “Come Alongside Me” person who journeys with you and with God, helping you flourish more freely and more fully in your life in a confidential, non-judgemental, genuinely caring, loving and peaceful way.</p>

@@ -50,7 +50,7 @@ function Resources() {
   return (
     <div className="resources">
       <h2>Resources</h2>
-      <p>We currently have a number of really amazing and lovely  journals, all written and designed by Karen (20cm square in size). All just £10 each, plus postage (£2 per journal) or free collection. To keep costs low we ask you to simply email us below the Journals you would like to purchase and your postage address and we will email you the payment information and post it to you… simple!</p>
+      <p>We currently have a number of really amazing and lovely journals, all written and designed by Karen (20cm square in size). All just £10 each, plus postage (£2 per journal) or free collection. To keep costs low we ask you to simply email us below the Journals you would like to purchase and your postage address and we will email you the payment information and post it to you… simple!</p>
 
 
       <h2>Looping through the cardRender</h2>
