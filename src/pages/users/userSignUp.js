@@ -7,7 +7,7 @@ import { useAppContext } from "../../libs/contextLib";
 function UserSignUp() {
 
     let history = useHistory();
-    //const { isAuthenticated, userHasAuthenticated } = useAppContext();
+    const { isAuthenticated, userHasAuthenticated } = useAppContext();
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
     const [cPassword, setCPassword] = useState("");

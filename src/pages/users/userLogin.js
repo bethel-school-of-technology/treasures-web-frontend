@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-import { useAppContext } from "../libs/contextLib";
+import { useAppContext } from "../../libs/contextLib";
 
-function userLogin() {
+function UserLogin() {
 
     const { isAuthenticated, userHasAuthenticated, setMessage } = useAppContext();
     const [name, setName] = useState("");
@@ -15,7 +15,7 @@ function userLogin() {
         try {
 
 
-            let data = await fetch("http://localhost:4000/users/login", {
+            let data = await fetch("http://localhost:4000/users/userLogin", {
                 method: "POST",
                 credentials: 'include',
                 headers: {
@@ -26,6 +26,7 @@ function userLogin() {
 
 
             let user = await data.json();
+            console.log(user)
 
             if (!user.hasOwnProperty('message')) {
                 userHasAuthenticated(user);
@@ -61,4 +62,4 @@ function userLogin() {
     );
 }
 
-export default userLogin;
+export default UserLogin;
