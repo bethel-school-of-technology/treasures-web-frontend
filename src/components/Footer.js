@@ -10,9 +10,10 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
-        <div className="container">
-          <div className="row row-cols-3 order-first">
-            <div className="footer-col col-lg-3">
+        <div className="container-fluid">
+          <div className="row">
+
+            <div className="col">
               <h3 className="col-title">About</h3>
               <ul className="footer-menu list-unstyled">
                 <li>
@@ -20,11 +21,7 @@ class Footer extends React.Component {
                     Our Heart
                   </Link>
                 </li>
-                <li>
-                  <Link className="text-link" to="../resources">
-                    Resources
-                  </Link>
-                </li>
+                
                 <li>
                   <Link className="text-link" to="../declaration">
                     Declarations
@@ -34,24 +31,25 @@ class Footer extends React.Component {
               </ul>
             </div>
 
-            <div className="footer-col col-lg-3">
-              <div className="divider"></div>
-              <br />
-              <br />
+            <div className="col logo-color">
               <div className="navbar-footer">
                   <img src={Logo} className="navbar-brand-footer" alt="Treasures Logo"></img>
-                  {/* <img src={require("../public/TreasuresFinSub.png")}></img> */}
-                  {/* <Link className="navbar-brand" to="public/TreasuresFinSub.png"></Link> */}
               </div>
               <small className="copyright">Treasures @ {year} </small>
             </div>
-            <div className="footer-col col-lg-3 order-last">
+
+            <div className="col">
               <h3 className="col-title">Contact</h3>
               <ul className="footer-menu list-unstyled">
                 <li>
                   <Link className="text-link" to="../contact">
                     Contact Us
                   </Link>
+                  <li>
+                  <Link className="text-link" to="../resources">
+                    Resources
+                  </Link>
+                </li>
                 </li>
               </ul>
             </div>
