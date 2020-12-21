@@ -18,7 +18,7 @@ class nav extends React.Component {
 
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/Blogs">Blogs<span class="sr-only">(current)</span></Link>
+                            <Link className="nav-link" to="/Blogs">Blogs</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="Declaration">Declaration</Link>
@@ -36,10 +36,10 @@ class nav extends React.Component {
                             <Link className="nav-link" to="../Contact">Contact</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="userSignUp">SignUp</Link>
+                            <Link className="nav-link" to="SignUp">SignUp</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="UserLogin">Login</Link>
+                            <Link className="nav-link" to="Login">Login</Link>
                         </li>
                     </ul>
                     <div className="navbar-header">
