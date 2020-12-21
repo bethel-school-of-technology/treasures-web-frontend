@@ -15,28 +15,34 @@ class nav extends React.Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarText">
-                    
-                        <ul className="navbar-nav mr-auto">
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/Blogs">Blogs<span class="sr-only">(current)</span></Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="Declaration">Declaration</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="Hearts">Our Hearts</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="Mentoring">Mentoring</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="Resources">Resources</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="../Contact">Contact</Link>
-                            </li>
-                        </ul>
-                   <div className="navbar-header">
+
+                    <ul className="navbar-nav mr-auto">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/Blogs">Blogs</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="Declaration">Declaration</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="Hearts">Our Hearts</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="Mentoring">Mentoring</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="Resources">Resources</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="../Contact">Contact</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="SignUp">SignUp</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="Login">Login</Link>
+                        </li>
+                    </ul>
+                    <div className="navbar-header">
                         {/* <a className="navbar-brand" href="/">Treasures</a> */}
                         <Link to="/">
                             <img src={Logo} className="navbar-logo" alt='Treasures Logo' />
