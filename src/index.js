@@ -18,10 +18,12 @@ import Resources from './pages/resources/resources';
 import Whole from './pages/wholeness/wholeness';
 import Footer from './components/Footer';
 import './components/nav.css';
+// import Calendar from "react-calendar";
 
 const Pages = () => (
   <Router>
         <Nav />
+        {/* <Calendar /> */}
     {/* <hr /> */}
     <Route exact path="/" component={App} />
     <Route path="/Contact" component={MyForm} />
