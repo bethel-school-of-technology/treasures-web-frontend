@@ -29,7 +29,7 @@ import './components/nav.css';
 const Pages = () => (
   <Router>
     <Nav />
-    <hr />
+    {/* <hr /> */}
     <Route exact path="/" component={App} />
     <Route path="/Contact" component={MyForm} />
     <Route path="/Blogs" component={Blogs} />
