@@ -1,14 +1,13 @@
 /* ---- Footer is centered on screens 892x978 or less. As soon as it gets bigger, it jumps tp being off-centered. I am working on fixing ---- */
-/*
 
-.container-fluid {
+ .container-fluid {
    background-color: blueviolet;
- } */
+ } 
  
 
 .footer {
-    /* display: inline-flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     text-align: center;
     background-color: rgb(133, 172, 151);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,22 +21,45 @@
     /* margin: auto; */
     color: rgb(235, 193, 121);
     padding: 2rem;
+   
     
 }
 
-/* .logo-color {
+.navbar-footer {
+   display: flex;
+   /* justify-content: center; */
+   background-color: lightpink;
+}
+
+/* .col logo-color {
    background-color: cyan;
+   display: flex; */
+/* justify-content: center; */
+/* } */
+
+/* .col .logo-color {
+background-color: lightgreen;
+
 } */
 
 .navbar-brand-footer {
    display: flex;
-   position: relative;
+   justify-content: center;
+   /* justify-content: center; */
+   /* position: relative; */
    /* width: 14rem;  */
-   max-width:100%;
+   background-color: rgb(222, 61, 195);
+   /* max-width:100%;*/
   max-height:100%; 
+  width: 100%; 
    
 }
 
+.copyright {
+   color: black;
+   display: flex;
+   justify-content: center;
+}
 /* html {
    position: relative;
    min-height: 100%;

@@ -11,9 +11,9 @@ class Footer extends React.Component {
     return (
       <footer className="footer">
         <div className="container-fluid">
-          <div className="row">
+          <div className="row footer-row">
 
-            <div className="col">
+            <div className="col-sm-4">
               <h3 className="col-title">About</h3>
               <ul className="footer-menu list-unstyled">
                 <li>
@@ -21,7 +21,6 @@ class Footer extends React.Component {
                     Our Heart
                   </Link>
                 </li>
-                
                 <li>
                   <Link className="text-link" to="../declaration">
                     Declarations
@@ -31,14 +30,14 @@ class Footer extends React.Component {
               </ul>
             </div>
 
-            <div className="col logo-color">
+            <div className="col-sm-4 logo-color">
               <div className="navbar-footer">
                   <img src={Logo} className="navbar-brand-footer" alt="Treasures Logo"></img>
-              </div>
               <small className="copyright">Treasures @ {year} </small>
             </div>
+            </div>
 
-            <div className="col">
+            <div className="col-sm-4">
               <h3 className="col-title">Contact</h3>
               <ul className="footer-menu list-unstyled">
                 <li>

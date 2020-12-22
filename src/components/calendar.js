@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import Calendar from "react-calendar";
 
 const ReactCalendar = () => {
@@ -17,4 +17,5 @@ const ReactCalendar = () => {
     );
 };
 
-render(<ReactCalendar />, document.querySelector("#root"));
+// render(<ReactCalendar />, document.querySelector("#root"));
+export default ReactCalendar;
