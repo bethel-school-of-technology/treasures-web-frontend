@@ -4,7 +4,7 @@ import './mentoring.css';
 class myMentor extends React.Component {
     render() {
         return (
-            <div className="mentoring">
+            <div className="mentoring"> 
                 <h2>Life-Journeying</h2>
                 <img className="textWrapRight" src="/images/WallerKaren-1.jpeg"></img>
                 <p>As a qualified and experienced Life-Coach I have over 8 years experience with over 70 ladies in; Life-coaching, pastoral prayer ministry, Bethel Sozo ministry and mentoring. I offer "Life-Journeying" to a small number of ladies throughout the year. It is a hybrid Spirit-led ministry and I continue to be blessed and excited by the anointing that the sessions carry to bring freedom, vision, momentum and peace into many ladies lives.</p>
