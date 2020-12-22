@@ -54,3 +54,7 @@
     height: 80px;
     width: auto;
 }
+
+.navbar {
+    box-shadow: 0 5px 6px rgba(166, 167, 167, 0.5);
+}
