@@ -35,7 +35,7 @@ class Footer extends React.Component {
               <div className="navbar-footer">
                   <img src={Logo} className="navbar-brand-footer" alt="Treasures Logo"></img>
               </div>
-              <small className="copyright">Treasures @ {year} </small>
+             
             </div>
 
             <div className="col">
@@ -55,6 +55,9 @@ class Footer extends React.Component {
             </div>
           </div>
         </div>
+        <div class="container">
+       <small className="copyright">Treasures @ {year} </small>
+       </div>
       </footer>
     );
   }
