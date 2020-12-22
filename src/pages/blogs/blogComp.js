@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-
+import Calendar from "../../components/calendar";
 
 function BlogComp() {
     let history = useHistory();
@@ -39,6 +39,7 @@ function BlogComp() {
                 <input id="dateN" name="dateN" type="date" onChange={e => setDate(e.target.value)} /><br></br><br></br>
                 <input type="submit" />
             </form>
+            <Calendar />
         </div>
     )
 }
