@@ -1,44 +1,41 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-
 
 function Login() {
 
     const [name, setName] = useState("");
     const [password, setPassword] = useState("");
 
+    const [users, setUsers] = useState([]);
+    useEffect(() => {
+        const getAllUsers = async () => {
+            let userData = await fetch("http://localhost:4000/users/")
+            let usr = await userData.json(); // used usr not user so as not confuse with the usr var set at the top.
+            console.log(usr.data.users);
+            setUsers(usr.data.users);
+        }
+        getAllUsers();
+    }, [])
+
+    //let user = await data.json();
+    //console.log()
+
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-
-
-            let data = await fetch("http://localhost:4000/users/Login", {
-                method: "POST", //GET
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name, password })
+            users.map((user, idx) => {
+                if (user.name === name && user.password === password)
+                    alert("User name or Password do not match");
+                return;
             })
-
-
-            let user = await data.json();
-            console.log(user)
-
-            //if (!user.hasOwnProperty('message')) {
-            //    userHasAuthenticated(user);
-            //    userHasAuthenticated(user);
-            //    setMessage("Welcome back!");
-            //} else {
-
-            //}
         } catch (err) {
             console.log(err)
         }
     }
 
+
     return (
-        <>
+        <div>
             <div>
                 <h1>Login</h1>
                 <form onSubmit={handleLogin}>
@@ -56,7 +53,7 @@ function Login() {
                 </form>
             </div>
             <Link to="/SignUp">Create An Account</Link>
-        </>
+        </div>
     );
 }
 
