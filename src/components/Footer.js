@@ -31,11 +31,11 @@ class Footer extends React.Component {
               </ul>
             </div>
 
-            <div className="col logo-color">
+            <div className="col">
               <div className="navbar-footer">
                   <img src={Logo} className="navbar-brand-footer" alt="Treasures Logo"></img>
               </div>
-              <small className="copyright">Treasures @ {year} </small>
+             <small className="copyright">Treasures @ {year} </small>
             </div>
 
             <div className="col">
