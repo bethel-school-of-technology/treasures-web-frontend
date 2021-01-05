@@ -1,0 +1,15 @@
+.myCalendar {
+    color: pink;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .react-calendar__month-view__weekdays__weekday abbr{
+    text-decoration: none;
+  }
+
+  #calendar-text {
+      color: black !important;
+  }
