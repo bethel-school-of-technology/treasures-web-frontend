@@ -1,0 +1,34 @@
+.strapLine{
+  display:flex;
+  font-size: 0.1rem;
+  /* font-stretch: ultra-expanded; */
+  color: black;
+  overflow: hidden;
+  width: 100%;
+  /* background-color: lightblue; */
+  /* width: 400px; */
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
