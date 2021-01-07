@@ -1,53 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.css';
-import axios from 'axios';
 
 
-class MyForm extends React.Component {
-    constructor() {
-        super()
+function MyForm() {
 
-        this.state = {
-            name: '',
-            email: '',
-            message: ''
-        }
+    var [nick, setNick] = useState("");
+    var [email, setEmail] = useState("");
+    var [message, setMessage] = useState("");
 
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
-    }
 
-    handleChange = e => {
-        this.setState({ [e.target.name]: e.target.value })
-    }
-
-    async handleSubmit(e) {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-
-        const { name, email, message } = this.state
-
-        const form = await axios.post('/contacts/api/form', {
-            name,
-            email,
-            message
+        let newContact = await fetch("http://localhost:4000/contacts/api/form", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ nick, email, message })
         })
+        let newContactForm = newContact.json();
+        console.log(newContactForm);
     }
 
-    render() {
-        return (
-            <div className="center">
-                <form>
-                    <label>Name:</label><br />
-                    <input type="text" name="name"></input><br />
-                    <label>Email Address:</label><br />
-                    <input type="text" name="email-address"></input><br />
-                    <label>Questions or Comments:</label><br />
-                    <textarea placeholder="Please type in here." name="feedback" cols="50" rows="10"></textarea><br />
-                    <input class="submit-button" type="submit" name="send" value="Submit"></input>
-                </form>
-            </div>
-        )
-    }
+    return (
+        <div className="center">
+            <form onSubmit={handleSubmit}>
+                <label>Name:</label><br />
+                <input type="text" name="identity" onChange={e => setNick(e.target.value)}></input><br />
+                <label>Email Address:</label><br />
+                <input type="text" name="email" onChange={e => setEmail(e.target.value)}></input><br />
+                <label>Questions or Comments:</label><br />
+                <textarea placeholder="Please type in here." name="message" onChange={e => setMessage(e.target.value)} cols="50" rows="10"></textarea><br />
+                <input class="submit-button" type="submit" name="send" value="Submit"></input>
+            </form>
+        </div>
+    )
 }
 
 export default MyForm;
