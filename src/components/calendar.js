@@ -13,7 +13,7 @@ const ReactCalendar = () => {
     return (
     <div className="myCalendar" id="calendar-text">
         <Calendar showWeekNumbers onChange={onChange} value={date} />
-        {console.log(date)};
+        {console.log(date)}
         {/* {date.toString()} */}
         </div>
     );

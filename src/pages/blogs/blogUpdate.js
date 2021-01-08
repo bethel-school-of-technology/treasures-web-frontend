@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useParams } from "react-router";
 import Calendar from "../../components/calendar";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function formatDate(date) {
   var theDate = new Date(date);
@@ -79,7 +81,7 @@ function BlogUpdate() {
         <input id="dateN" name="dateN"  type="date" onChange={e => setDate(e.target.value)} value={date}/><br></br><br></br>
         <input type="submit" />
       </form>
-      <Calendar />
+      {/* <Calendar /> */}
     </div>
   )
 }
