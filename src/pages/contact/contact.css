@@ -1,14 +1,19 @@
 .center {
     text-align: center;
     color: rgb(251, 255, 251);
-    background-color: rgb(132, 192, 238);
+    background-color: rgb(54, 197, 190);
     /* padding-top: 80px; */
 }
 
+.round {
+    border-radius: 10px;
+}
+
 .submit-button {
-    background-color: rgb(152, 145, 136);
-    box-shadow: 3px 3px 3px rgb(38, 38, 38);
+    background-color: rgb(90, 212, 165);
+    box-shadow: 3px 3px 3px rgb(6, 8, 7);
     padding-bottom: 5px;
     margin-bottom: 1rem;
     text-align: center;
+    border-radius: 15px;
 }
