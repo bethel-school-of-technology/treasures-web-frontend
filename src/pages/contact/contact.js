@@ -23,12 +23,16 @@ function MyForm() {
     return (
         <div className="center">
             <form onSubmit={handleSubmit}>
+                <h3>
+                    Please use this form for any questions, comments, suggestions or feedback.<br />
+                    We thank you for any interest you may have, and look forward to answering your questions.
+                </h3>
                 <label>Name:</label><br />
-                <input type="text" name="identity" onChange={e => setNick(e.target.value)}></input><br />
+                <input className="round" type="text" name="nick" onChange={e => setNick(e.target.value)}></input><br />
                 <label>Email Address:</label><br />
-                <input type="text" name="email" onChange={e => setEmail(e.target.value)}></input><br />
+                <input className="round" type="text" name="email" onChange={e => setEmail(e.target.value)}></input><br />
                 <label>Questions or Comments:</label><br />
-                <textarea placeholder="Please type in here." name="message" onChange={e => setMessage(e.target.value)} cols="50" rows="10"></textarea><br />
+                <textarea className="round" placeholder="Your feedback is welcome here." name="message" onChange={e => setMessage(e.target.value)} cols="50" rows="10"></textarea><br />
                 <input class="submit-button" type="submit" name="send" value="Submit"></input>
             </form>
         </div>
