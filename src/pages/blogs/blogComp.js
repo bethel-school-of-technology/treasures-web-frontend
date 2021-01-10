@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Calendar from "../../components/calendar";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function BlogComp() {
     let history = useHistory();
     var [title, setTitle] = useState("");
     var [description, setDescription] = useState("");
     var [mainBody, setMainBody] = useState("");
-    var [date, setDate] = useState("");
+    var [date, setDate] = useState(new Date());
 
     const handleSubmit = async (e) => {
         e.preventDefault() // used for the history.push at the end of this section of code
@@ -36,10 +38,12 @@ function BlogComp() {
                 <textarea id="bodyN" name="bodyN" onChange={e => setMainBody(e.target.value)} rows="10" cols="130"></textarea><br></br>
                 {/* <texta type="text" onChange={e => setMainBody(e.target.value)} /><br></br> */}
                 <lable for="dateN" >Date: </lable><br></br>
-                <input id="dateN" name="dateN" type="date" onChange={e => setDate(e.target.value)} /><br></br><br></br>
+                {/* <input id="dateN" name="dateN" type="date" onChange={e => setDate(e.target.value)} /> */}
+                <DatePicker selected={date} onChange={date => setDate(date)}></DatePicker>
+                <br></br><br></br>
                 <input type="submit" />
             </form>
-            <Calendar />
+            {/* <Calendar /> */}
         </div>
     )
 }
