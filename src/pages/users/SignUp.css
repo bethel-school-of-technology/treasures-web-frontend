@@ -1,0 +1,27 @@
+.most {
+    text-align: center;
+    background-color: rgb(148, 232, 243);
+    color: rgb(30, 31, 114);
+}
+
+.upper {
+    color: rgb(24, 71, 228);
+}
+
+.sign {
+    border-radius: 10px;
+}
+
+.here {
+    text-align: center;
+    background-color: rgb(138, 231, 169);
+}
+
+.into {
+    background-color: rgb(61, 194, 143);
+    box-shadow: 3px 3px 3px rgb(6, 8, 7);
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
