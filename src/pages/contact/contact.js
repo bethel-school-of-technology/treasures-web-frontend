@@ -23,9 +23,9 @@ function MyForm() {
     return (
         <div className="center">
             <form onSubmit={handleSubmit}>
-                <h3>
+                <h3 className="topletter">
                     Please use this form for any questions, comments, suggestions or feedback.<br />
-                    We thank you for any interest you may have, and look forward to answering your questions.
+                    We thank you for your interest and we look forward to answering your questions.
                 </h3>
                 <label>Name:</label><br />
                 <input className="round" type="text" name="nick" onChange={e => setNick(e.target.value)}></input><br />

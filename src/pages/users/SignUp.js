@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import { useHistory, Link } from "react-router-dom";
+import './SignUp.css';
 
 
 function SignUp() {
@@ -46,27 +46,31 @@ function SignUp() {
 
     return (
         <>
-            <div>
-                <h1>Signup</h1>
+            <div className="most">
+                <h1 className="upper">Please make an account.</h1>
                 <form onSubmit={handleSignup}>
                     <div>
-                        <label>Name</label>
-                        <input type="text" onChange={(e) => setName(e.target.value)} />
+                        <label>Name</label><br />
+                        <input className="sign" type="text" onChange={(e) => setName(e.target.value)} />
                     </div>
                     <div>
-                        <label>Password</label>
-                        <input type="password" onChange={(e) => setPassword(e.target.value)} />
+                        <label>Password</label><br />
+                        <input className="sign" type="password" onChange={(e) => setPassword(e.target.value)} />
                     </div>
                     <div>
-                        <label>Confirm Password</label>
-                        <input type="password" onChange={(e) => setCPassword(e.target.value)} />
+                        <label>Confirm Password</label><br />
+                        <input className="sign" type="password" onChange={(e) => setCPassword(e.target.value)} />
                     </div>
+                    <br />
                     <div>
-                        <button >Signup</button>
+                        <button className="into">Sign Up</button>
                     </div>
+                    <br />
                 </form>
             </div>
+            <div className="here">
             <Link to="/Login">Already A User?</Link>
+            </div>
         </>
     );
 }

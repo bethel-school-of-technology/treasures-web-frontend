@@ -1,12 +1,16 @@
 .center {
     text-align: center;
-    color: rgb(251, 255, 251);
+    color: rgb(8, 8, 8);
     background-color: rgb(54, 197, 190);
     /* padding-top: 80px; */
 }
 
 .round {
     border-radius: 10px;
+}
+
+.topletter {
+    color: rgb(41, 47, 167);
 }
 
 .submit-button {
