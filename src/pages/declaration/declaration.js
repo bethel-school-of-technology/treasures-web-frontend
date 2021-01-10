@@ -118,7 +118,7 @@ class myDeclaration extends React.Component {
         <p>You continually delight in me and sing over me. (Zeph 3:17)</p>
         <p>My desire is that I may always be found and known as being in You (Phil 3:9)</p>
         <p>AMEN</p>
-        <a href='/somefile.txt' download>Click to download</a>
+        <a href='/somefile.txt' download className="btn btn-info">Click to download</a>
       </div>
     )
   }
