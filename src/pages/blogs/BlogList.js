@@ -18,8 +18,12 @@ function BlogList() {
     const getAllBlogs = async () => {
       let blogsData = await fetch("http://localhost:4000/blogs/")
       let blg = await blogsData.json(); // used blg not blog so as not confuse with the blog var set at the top.
-      console.log(blg.data.blogs);
-      setBlogs(blg.data.blogs);
+      // console.log(blg.data.blogs);
+      setBlogs(blg.data.blogs.sort(function (a, b) {
+        var c = new Date(a.date);
+        var d = new Date(b.date);
+        return d - c;   // sorting newest date first on the list
+      }));
     }
     getAllBlogs();
   }, [])

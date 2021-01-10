@@ -30,6 +30,7 @@ img {
     padding: 1rem;
     margin: 1rem;
     background-color: gray;
+    text-align: left;
 }
 
 .textWrapLeft {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import './Login.css';
 
 function Login() {
 
@@ -35,25 +36,32 @@ function Login() {
 
 
     return (
-        <div>
-            <div>
-                <h1>Login</h1>
-                <form onSubmit={handleLogin}>
-                    <div>
-                        <label>Name</label>
-                        <input type="text" onChange={(e) => setName(e.target.value)} />
-                    </div>
-                    <div>
-                        <label>Password</label>
-                        <input type="password" onChange={(e) => setPassword(e.target.value)} />
-                    </div>
-                    <div>
-                        <button>Login</button>
-                    </div>
-                </form>
+        <>
+            <div className="logged">
+                <div>
+                    <h1 className="infor">Please Log In</h1>
+                    <form onSubmit={handleLogin}>
+                        <div>
+                            <label>Name</label><br />
+                            <input className="logger" type="text" onChange={(e) => setName(e.target.value)} />
+                        </div>
+                        <br />
+                        <div>
+                            <label>Password</label><br />
+                            <input className="logger" type="password" onChange={(e) => setPassword(e.target.value)} />
+                        </div>
+                        <br />
+                        <div>
+                            <button className="subbed">Login</button>
+                        </div>
+                    </form>
+                    <br />
+                </div>
             </div>
-            <Link to="/SignUp">Create An Account</Link>
-        </div>
+            <div className="lower">
+                <Link to="/SignUp">Create An Account</Link>
+            </div>
+        </>
     );
 }
 

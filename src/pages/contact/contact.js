@@ -1,9 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.css';
-import axios from 'axios';
+//import axios from 'axios';
+
+function MyForm() {
+
+    var [nick, setNick] = useState("");
+    var [email, setEmail] = useState("");
+    var [message, setMessage] = useState("");
 
 
-class MyForm extends React.Component {
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        let newContact = await fetch("http://localhost:4000/contacts/api/form", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ nick, email, message })
+        })
+        let newContactForm = newContact.json();
+        console.log(newContactForm);
+    }
+
+    return (
+        <div className="center">
+            <form onSubmit={handleSubmit}>
+                <h3 className="topletter">
+                    Please use this form for any questions, comments, suggestions or feedback.<br />
+                    We thank you for your interest and we look forward to answering your questions.
+                </h3>
+                <label>Name:</label><br />
+                <input className="round" type="text" name="nick" onChange={e => setNick(e.target.value)}></input><br />
+                <label>Email Address:</label><br />
+                <input className="round" type="text" name="email" onChange={e => setEmail(e.target.value)}></input><br />
+                <label>Questions or Comments:</label><br />
+                <textarea className="round" placeholder="Your feedback is welcome here." name="message" onChange={e => setMessage(e.target.value)} cols="50" rows="10"></textarea><br />
+                <input class="submit-button" type="submit" name="send" value="Submit"></input>
+            </form>
+        </div>
+    )
+}
+
+/*class MyForm extends React.Component {
     constructor() {
         super()
 
@@ -48,6 +84,6 @@ class MyForm extends React.Component {
             </div>
         )
     }
-}
+}*/
 
 export default MyForm;
