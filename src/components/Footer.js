@@ -13,6 +13,7 @@ class Footer extends React.Component {
     return (
       <footer className="footer">
         <div className="container-fluid">
+
           <div className="row">
 
             <div className="col">
