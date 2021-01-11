@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+
 import { useHistory, Link } from "react-router-dom";
-import './SignUp.css';
+import "./SignUp.css";
+import Logo from "./image/icon.svg";
 
 
 function SignUp() {
@@ -15,7 +17,7 @@ function SignUp() {
         e.preventDefault();
         try {
 
-            if (password != cPassword) {
+            if (password !== cPassword) {
                 alert("Passwords do not match");
                 return;
             }
@@ -46,33 +48,34 @@ function SignUp() {
 
     return (
         <>
-            <div className="most">
-                <h1 className="upper">Please make an account.</h1>
-                <form onSubmit={handleSignup}>
-                    <div>
-                        <label>Name</label><br />
-                        <input className="sign" type="text" onChange={(e) => setName(e.target.value)} />
-                    </div>
-                    <div>
-                        <label>Password</label><br />
-                        <input className="sign" type="password" onChange={(e) => setPassword(e.target.value)} />
-                    </div>
-                    <div>
-                        <label>Confirm Password</label><br />
-                        <input className="sign" type="password" onChange={(e) => setCPassword(e.target.value)} />
-                    </div>
-                    <br />
-                    <div>
-                        <button className="into">Sign Up</button>
-                    </div>
-                    <br />
-                </form>
-            </div>
-            <div className="here">
-            <Link to="/Login">Already A User?</Link>
+            <div class="text-center" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
+                <main class="form-signup">
+                    <form onSubmit={handleSignup}>
+                        <img class="mb-3" src={Logo} alt="Treasures Logo" alt="" width="40" height="35"></img>
+                        <h1 class="h3 mb-3 fw-normal">Please Sign Up</h1>
+                        <label for="inputName" class="visually-hidden">Name</label>
+                        <input type="name" id="inputName" class="form-control" placeholder="Name" required autofocus="" onChange={(e) => setName(e.target.value)} />
+                        <label for="inputPassword" class="visually-hidden">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" onChange={(e) => setPassword(e.target.value)} />
+
+                        <label for="inputPassword" class="visually-hidden">Confirm Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" onChange={(e) => setCPassword(e.target.value)} />
+
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me" /> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                        <p class="mt-5 mb-3 text-muted">© 2020</p>
+                        <Link to="/Login">Already A User?</Link>
+                    </form>
+                </main>
             </div>
         </>
     );
 }
+
+
 
 export default SignUp;

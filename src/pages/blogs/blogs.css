@@ -1,9 +1,13 @@
 .blogContainer {
+  font-family: josefinsans-bold;
   text-align: center;
   color: black;
   background-color: lightgrey;
   padding: 1rem;
   margin: 1rem;
+  padding-bottom: 6rem;
+  margin-bottom: 9rem;
+
   /* padding: 1rem 1rem; */
   /* width: 100%; */
 }
@@ -13,7 +17,7 @@
   padding: 1rem 1rem;
   /* width: 100%; */
 }
-.blogDetail{
+.blogDetail {
   background: lightyellow;
   padding: 0.5rem;
   color: black;

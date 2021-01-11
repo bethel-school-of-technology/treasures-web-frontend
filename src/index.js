@@ -7,6 +7,8 @@ import MyForm from './pages/contact/contact';
 import {
   BrowserRouter as Router, Route, Link
 } from 'react-router-dom';
+import './assets/fonts/webfontkit-JosefinSans/stylesheet.css';
+import './assets/treasures.css';
 
 
 import Blogs from './pages/blogs/blogs';
