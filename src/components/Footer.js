@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./Footer.css";
 import Logo from "./../images/TreasuresFin.png";
 
+
+
 const currentDate = new Date();
 const year = currentDate.getFullYear();
 
@@ -15,47 +17,47 @@ class Footer extends React.Component {
 
             <div className="col">
               <div className="col-1-2">
-              <h3 className="col-title">About</h3>
-              <ul className="footer-menu list-unstyled">
-                <li>
-                  <Link className="text-link" to="../hearts">
-                    Our Heart
+                <h3 className="col-title">About</h3>
+                <ul className="footer-menu list-unstyled">
+                  <li>
+                    <Link className="text-link" to="../hearts">
+                      Our Heart
                   </Link>
-                </li>
-                
-                <li>
-                  <Link className="text-link" to="../declaration">
-                    Declarations
+                  </li>
+
+                  <li>
+                    <Link className="text-link" to="../declaration">
+                      Declarations
                   </Link>{" "}
-                  <span className="badge badge-info badge-sm">Download</span>
-                </li>
-              </ul>
+                    <span className="badge badge-info badge-sm">Download</span>
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div className="col">
               <div className="navbar-footer">
-                  <img src={Logo} className="navbar-brand-footer" alt="Treasures Logo"></img>
+                <img src={Logo} className="navbar-brand-footer" alt="Treasures Logo"></img>
               </div>
-             <small className="copyright">Treasures @ {year} </small>
+              <small className="copyright">Treasures @ {year} </small>
             </div>
 
             <div className="col">
-            <div className="col-1-2">
-              <h3 className="col-title">Contact</h3>
-              <ul className="footer-menu list-unstyled">
-                <li>
-                  <Link className="text-link" to="../contact">
-                    Contact Us
-                  </Link>
+              <div className="col-1-2">
+                <h3 className="col-title">Contact</h3>
+                <ul className="footer-menu list-unstyled">
                   <li>
-                  <Link className="text-link" to="../resources">
-                    Resources
+                    <Link className="text-link" to="../contact">
+                      Contact Us
                   </Link>
-                </li>
-                </li>
-              </ul>
-            </div>
+                    <li>
+                      <Link className="text-link" to="../resources">
+                        Resources
+                  </Link>
+                    </li>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
