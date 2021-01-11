@@ -1,0 +1,14 @@
+/* Global Styles for Treasures*/
+:root {
+  --primary-color: #0d6efd;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+  --danger-color: #dc3545;
+  --success-color: #198754;
+  --secondary-color: #6c757d;
+  --tr-blue: #0075aa;
+  --tr-honey: #ceac86;
+  --tr-gray: #a2a1a1;
+  --tr-pastelGreen: #c5d3a1;
+  --tr-dustyPurple: #7a7d94;
+}

@@ -1,8 +1,8 @@
 .resources {
-  font-family: josefinsans-regular;
+  font-family: 'josefin_sanslight';
   text-align: center;
-  color: white;
-  background-color: grey;
+  color: var(--dark-color);
+  background-color: var(--light-color);
   padding: 1rem;
   /* margin-top: 6rem; */
   width: 100%;
@@ -10,8 +10,12 @@
   margin-bottom: 10rem;
 }
 
+.text {
+  color: var(--primary-color);
+}
+
 .resources .card {
-  background: plum;
+  background: var(--tr-honey);
   margin: 0.5rem;
   color: black;
   width: 18rem;

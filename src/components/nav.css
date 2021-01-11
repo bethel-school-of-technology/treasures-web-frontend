@@ -1,4 +1,4 @@
- /* .navbar {
+/* .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -30,33 +30,32 @@
     display: flex; 
 } */
 
-
 .nav-link {
-   /* line-height: 80px; */
-   color: #fff;
-   /* padding: 12px 30px; */
-   text-decoration: none;
-   /* text-transform: uppercase; */
-   /* font-size: 15px; */
-   /* font-weight: bold;  */
-} 
+  /* line-height: 80px; */
+  color: #fff;
+  /* padding: 12px 30px; */
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  /* font-size: 15px; */
+  /* font-weight: bold;  */
+}
 
 .nav-link:hover {
-    background: rgb(202, 232, 240);
-    opacity: 0.5;
-    border-radius: 6px;
+  background: rgb(202, 232, 240);
+  opacity: 0.5;
+  border-radius: 6px;
 }
 
 .nav-link:active {
-    background: rgb(143, 165, 171);
-    color: #fff;
-    border-radius: 6px;
+  background: rgb(143, 165, 171);
+  color: #fff;
+  border-radius: 6px;
 }
 .navbar-logo {
-    height: 80px;
-    width: auto;
+  height: 80px;
+  width: auto;
 }
 
 .navbar {
-    box-shadow: 0 5px 6px rgba(166, 167, 167, 0.5);
+  box-shadow: 0 5px 6px rgba(166, 167, 167, 0.5);
 }
