@@ -14,6 +14,7 @@ class Footer extends React.Component {
           <div className="row">
 
             <div className="col">
+              <div className="col-1-2">
               <h3 className="col-title">About</h3>
               <ul className="footer-menu list-unstyled">
                 <li>
@@ -29,6 +30,7 @@ class Footer extends React.Component {
                   <span className="badge badge-info badge-sm">Download</span>
                 </li>
               </ul>
+              </div>
             </div>
 
             <div className="col">
@@ -39,6 +41,7 @@ class Footer extends React.Component {
             </div>
 
             <div className="col">
+            <div className="col-1-2">
               <h3 className="col-title">Contact</h3>
               <ul className="footer-menu list-unstyled">
                 <li>
@@ -52,6 +55,7 @@ class Footer extends React.Component {
                 </li>
                 </li>
               </ul>
+            </div>
             </div>
           </div>
         </div>

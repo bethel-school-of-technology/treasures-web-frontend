@@ -5,6 +5,8 @@
     padding: 1rem;
     /* margin-top: 6rem; */
     width: 100%;
+    padding-bottom: 20rem;
+    margin-bottom: 10rem;
 }
 
 .resources .card {
@@ -30,4 +32,41 @@ img {
     padding: 1rem;
     margin: 1rem;
     background-color: gray;
+    text-align: left;
+}
+
+.textWrapLeft {
+    clear: right;
+    float: left;
+    margin: 1rem;
+    max-width: 20rem;
+} 
+
+.textWrapRight {
+    clear: left;
+    float: right;
+    margin: 1rem;
+    max-width: 20rem;
+}
+
+@media (max-width: 600px) {
+    .textWrapLeft {
+        margin: 0.5rem;
+        max-width: 18rem;
+    }
+    .textWrapRight {
+        margin: 0.5rem;
+        max-width: 18rem;
+    }
+}
+
+@media (min-width: 601px) {
+    .textWrapLeft {
+        margin: 1.5rem;
+        max-width: 18rem;
+    }
+    .textWrapRight {
+        margin: 1.5rem;
+        max-width: 18rem;
+    }
 }

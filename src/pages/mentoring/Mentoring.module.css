@@ -3,6 +3,7 @@
     color: white;
     background-color: grey;
     padding: 1rem;
+    padding-bottom: 10rem;
     /* margin-top: 6rem; */
 }
 
@@ -22,37 +23,23 @@
 
 @media (max-width: 600px) {
     .textWrapLeft {
-        /* display: block;
-        margin-left: auto;
-        margin-right: auto; */
-        /* clear: right; */
         float: center;
         margin: 0.5rem;
         max-width: 15rem;
-        /* align-content: center; */
     }
     .textWrapRight {
-        /* display: block; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* clear: left; */
         float: center;
         margin: 0.5rem;
         max-width: 15rem;
-        /* align-content: center; */
     }
 }
 
 @media (min-width: 601px) {
     .textWrapLeft {
-        clear: right;
-        float: left;
         margin: 1rem;
         max-width: 25rem;
     }
     .textWrapRight {
-        clear: left;
-        float: right;
         margin: 1rem;
         max-width: 25rem;
     }

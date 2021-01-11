@@ -21,12 +21,12 @@ function BlogDetail() {
 
   return (
     <div className="blogContainer">
-      <div>
+      <h2>
         {ReactHtmlParser(htmlTitle)}
-      </div>
-      <div>
+      </h2>
+      {/* <div>
         {ReactHtmlParser(htmlDescription)}
-      </div>      
+      </div>       */}
       <div>
         {ReactHtmlParser(htmlMainBody)}
       </div>

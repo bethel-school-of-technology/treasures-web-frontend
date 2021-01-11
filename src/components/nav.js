@@ -21,25 +21,25 @@ class nav extends React.Component {
                             <Link className="nav-link" to="/Blogs">Blogs</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="Declaration">Declaration</Link>
+                            <Link className="nav-link" to="/Declaration">Declaration</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="Hearts">Our Hearts</Link>
+                            <Link className="nav-link" to="/Hearts">Our Hearts</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="Mentoring">Mentoring</Link>
+                            <Link className="nav-link" to="/Mentoring">Mentoring</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="Resources">Resources</Link>
+                            <Link className="nav-link" to="/Resources">Resources</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="../Contact">Contact</Link>
+                            <Link className="nav-link" to="/Contact">Contact</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="SignUp">SignUp</Link>
+                            <Link className="nav-link" to="/SignUp">SignUp</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="Login">Login</Link>
+                            <Link className="nav-link" to="/Login">Login</Link>
                         </li>
                     </ul>
                     <div className="navbar-header">

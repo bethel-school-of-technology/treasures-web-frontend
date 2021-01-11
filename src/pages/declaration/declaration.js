@@ -5,8 +5,8 @@ class myDeclaration extends React.Component {
   render() {
     return (
       <div className="declaration">
-        <h2>Declarations</h2>
-        <h4>121 Daily Scriptural Declarations</h4>
+        {/* <h2>Declarations</h2> */}
+        <h2>121 Daily Scriptural Declarations</h2>
         <p>Thank you Father God for this new day and that your mercies and love is new each day! (Lamentations 3:22-23)</p>
         <p>You are my Daddy, my Abba Father (Romans 8:15), Jesus, You are my King and my friend, my Saviour and my God (Titus 2:13) and Holy Spirit You are my comforter, strengthener, encourager, counselor and my closest friend. (John 14:26).</p>
         <p>Early each day will I seek you God. (Psalm 63:1)</p>
@@ -118,7 +118,7 @@ class myDeclaration extends React.Component {
         <p>You continually delight in me and sing over me. (Zeph 3:17)</p>
         <p>My desire is that I may always be found and known as being in You (Phil 3:9)</p>
         <p>AMEN</p>
-
+        <a href='/somefile.txt' download className="btn btn-info">Click to download</a>
       </div>
     )
   }
