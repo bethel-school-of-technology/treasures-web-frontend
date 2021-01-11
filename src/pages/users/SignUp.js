@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { useHistory, Link } from "react-router-dom";
-import "./users.css";
+import "./SignUp.css";
 import Logo from "./image/icon.svg";
 
 
