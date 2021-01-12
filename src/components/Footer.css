@@ -9,7 +9,7 @@
   /* left: 0;
     bottom: 0; */
   width: 100%;
-  color: rgb(235, 193, 121);
+  color: var(--light-color);
   padding: 10px;
   box-shadow: 0 5px 6px rgba(59, 59, 59, 0.5) inset;
 
@@ -29,7 +29,11 @@
   }
 }
 
-
+/* @media (min-width: 768px) {
+  .container-fluid-md {
+    font-size: 3rem;
+  }
+}
 
 /* html {
    font-size: 2vw;

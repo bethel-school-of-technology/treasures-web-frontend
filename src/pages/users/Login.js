@@ -41,7 +41,7 @@ function Login() {
             <div class="text-center" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
                 <main class="form-login">
                     <form onSubmit={handleLogin}>
-                        <img class="mb-3" src={Logo} alt="Treasures Logo" alt="" width="40" height="35"></img>
+                        <img class="bd-placeholder-img" src={Logo} alt="Treasures Logo" alt=""></img>
                         <h1 class="h3 mb-3 fw-normal">Welcome Back!</h1>
                         <label for="inputName" class="visually-hidden">Name</label>
                         <input type="name" id="inputName" class="form-control" placeholder="Name" required autofocus="" onChange={(e) => setName(e.target.value)} />
