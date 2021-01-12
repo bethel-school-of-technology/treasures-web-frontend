@@ -7,6 +7,8 @@ import Encounters from '../../images/Encounters.jpg';
 import WhoAmI from '../../images/WhoAmI.jpg';
 
 function Resources() {
+
+
   const cardInfo = [
     {
       image: "../../images/TimesAndSeasons.jpg",
@@ -67,6 +69,9 @@ function Resources() {
       //     <Card.Text>{card.text}</Card.Text>
       //   </Card.Body>
       // </Card>
+
+
+
       <div className="card" key={index}>
         <div className="card-header">{card.header}</div>
         <img className="card-img-top" src={card.image} alt={"dummy text"}></img>
@@ -76,11 +81,27 @@ function Resources() {
           <p className="card-text">{card.text}</p>
         </div>
       </div>
+
     )
   };
 
   return (
+
+
+
     <div className="resources">
+
+      <div class="container" className="tagLineSpacer">
+        <div class="row">
+          <div class="col-12">
+            <header className="taglineText">
+              <h4>Wholeness Through A Journey of Love</h4>
+              <hr></hr>
+            </header>
+          </div>
+        </div>
+      </div>
+
       <h2>Resources</h2>
       <p>We currently have a number of really amazing and lovely journals, all written and designed by Karen (20cm square in size). All just £8 each, plus postage (£2 per journal) or free collection. To keep costs low we ask you to simply email us below the Journals you would like to purchase and your postage address and we will email you the payment information and post it to you… simple!</p>
 
@@ -109,9 +130,7 @@ function Resources() {
             <p >Just one short encounter with Jesus was all it took for people to step into freedom, wholeness and life, even after years of suffering with complex issues. Yet each encounter was the result of a journey. What was going on in their hearts and minds as they reached out to Jesus? What were their hopes and fears as they journeyed towards Him? - Maybe they were the same ones as you have?</p>
             <p>These ten stories are based on the accounts found in the gospels but they are not meant to be read as scripture. However, they are written to be consistent with both God’s and man’s nature. By dramatising the accounts, my hope is that they would help you experience just one possibility of what it might have been like for each person. A glimpse into the unique journey of their hearts and minds, of their hopes and fears, leading up to the moment of their encounter with Jesus and subsequent breakthrough. Every story, every breakthrough, has been recorded in scripture to encourage us. For what God has done for one, is available for all… for you!</p>
             <p>After each short story I have added a few thoughts and questions to help you ponder, explore and go on your own journey encountering Jesus.</p>
-            <div className="center-div">
-              <a className="btn btn-primary" href="https://www.amazon.co.uk/dp/B08B35T9MC">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08B35T9MC">Amazon USA</a>
-            </div>
+            <a className="btn btn-primary" href="https://www.amazon.co.uk/dp/B08B35T9MC">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08B35T9MC">Amazon USA</a>
             {/* <a className="btn btn-light" href="https://www.amazon.co.uk/dp/B08B35T9MC">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08B35T9MC">Amazon USA</a> */}
           </div>
         </div>
@@ -128,9 +147,7 @@ function Resources() {
             <p>A treasure map to discovering the gold that is hidden inside yourself and all those amazing people around you! God sees the gold and the goodness in YOU and in every single person in your world!</p>
             <p>So here begins the adventure... an adventure you can go on by yourself, with friends and family or in a group whatever age you all are, isn’t that cool! An adventure that will help you to see the Bible and hear God’s voice in a new way. An adventure that will take you through all seven continents of the world as we explore lots of different animals, enjoy fun and creative activities and learn many ways to discover the gold in ourselves and others!</p>
             <p>Enjoy the adventure!!!</p>
-            <div className="center-div">
-              <a className="btn btn-primary" href="https://www.amazon.co.uk/dp/B08P3QTMK4">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08P3QTMK4">Amazon USA</a>
-            </div>
+            <a className="btn btn-primary" href="https://www.amazon.co.uk/dp/B08P3QTMK4">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08P3QTMK4">Amazon USA</a>
           </div>
         </div>
 
