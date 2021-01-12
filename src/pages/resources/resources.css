@@ -1,23 +1,24 @@
 .resources {
-  font-family: 'josefin_sanslight';
+  /* font-family: 'josefin_sanslight'; */
   text-align: center;
   color: var(--dark-color);
-  background-color: var(--light-color);
-  padding: 1rem;
+  /* background-color: var(--light-color); */
+  margin: 3rem 5rem;
+  /* padding: 1rem; */
   /* margin-top: 6rem; */
-  width: 100%;
+  /* width: 100%; */
   /* padding-bottom: 20rem;
   margin-bottom: 10rem; */
 }
 
-.text {
+/* .text {
   color: var(--primary-color);
-}
+} */
 
 .resources .card {
   background: var(--tr-honey);
   margin: 0.5rem;
-  color: black;
+  /* color: black; */
   width: 18rem;
 }
 
@@ -35,12 +36,16 @@ img {
 
 .bookSelf {
   padding: 1rem;
-  margin: 1rem;
+  margin: 2rem;
   background-color: var(--tr-honey);
   text-align: left;
 }
 
-.textWrapLeft {
+.center-div{
+  text-align: center;
+}
+
+/* .textWrapLeft {
   clear: right;
   float: left;
   margin: 1rem;
@@ -52,7 +57,7 @@ img {
   float: right;
   margin: 1rem;
   max-width: 20rem;
-}
+} */
 
 @media (max-width: 600px) {
   .textWrapLeft {

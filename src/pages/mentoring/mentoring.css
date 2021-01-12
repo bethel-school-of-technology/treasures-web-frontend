@@ -1,24 +1,25 @@
 .mentoring {
-    text-align: center;
-    color: white;
-    background-color: grey;
-    padding: 1rem;
-    margin-bottom: 10rem;
+    text-align: left;
+    /* color: white; */
+    /* background-color: grey; */
+    margin: 3rem 5rem;
+    /* padding: 1rem; */
+    /* margin-bottom: 10rem; */
     /* margin-top: 6rem; */
 }
 
 .textWrapLeft {
     clear: right;
     float: left;
-    margin: 1rem;
-    max-width: 20rem;
+    /* margin: 1rem;
+    max-width: 20rem; */
 } 
 
 .textWrapRight {
     clear: left;
     float: right;
-    margin: 1rem;
-    max-width: 20rem;
+    /* margin: 1rem;
+    max-width: 20rem; */
 }
 
 @media (max-width: 600px) {
