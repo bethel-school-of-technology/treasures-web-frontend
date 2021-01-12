@@ -1,18 +1,26 @@
 .blogContainer {
-  font-family: josefinsans-bold;
+  /* font-family: josefinsans-bold; now controlled by index.css */
   text-align: center;
   color: black;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   padding: 1rem;
   margin: 1rem;
-  padding-bottom: 6rem;
-  margin-bottom: 9rem;
+  /* padding-bottom: 6rem;
+  margin-bottom: 9rem; */
 
   /* padding: 1rem 1rem; */
   /* width: 100%; */
 }
+
+.blogUpdateContainer{
+  background: var(--tr-honey);
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
 .adminBlogContainer {
-  background: rgb(255, 240, 240);
+  background: var(--tr-honey);
   margin: 1rem;
   padding: 1rem 1rem;
   /* width: 100%; */
@@ -25,7 +33,7 @@
 }
 
 .blogContainer .card {
-  background: paleturquoise;
+  background: var(--tr-honey);
   margin: 0.5rem;
   color: black;
   /* padding: 1rem 1rem; */

@@ -5,7 +5,7 @@ function StrapLine() {
 
   function repeatStringNumTimes() {
     var phrase = "- Wholeness Through a Journey of Love "
-    var times = parseInt(window.innerWidth / 130)
+    var times = parseInt(window.innerWidth / 110)
     console.log("times = " + times)
     return phrase.repeat(times);
   };
@@ -27,7 +27,8 @@ function StrapLine() {
         <p>Window width: <span id="width"></span></p>
       </div> */}
       <div className="row">
-        <div className="strapLine text-nowrap col align-self-center">
+        {/* removed col from line below as was picking up settings from footer.css */}
+        <div className="strapLine text-nowrap"> 
           {repeatStringNumTimes()} -
         </div>
       </div>
