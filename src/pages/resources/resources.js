@@ -29,7 +29,7 @@ function Resources() {
     {
       image: "../../images/PreciousAndBeautiful.jpg",
       header: "Prayer Journal",
-      title: "Precious &amp; Beautiful",
+      title: "Precious & Beautiful",
       text: "Praying to know and live out your beauty"
     },
     {
@@ -109,7 +109,8 @@ function Resources() {
             <p >Just one short encounter with Jesus was all it took for people to step into freedom, wholeness and life, even after years of suffering with complex issues. Yet each encounter was the result of a journey. What was going on in their hearts and minds as they reached out to Jesus? What were their hopes and fears as they journeyed towards Him? - Maybe they were the same ones as you have?</p>
             <p>These ten stories are based on the accounts found in the gospels but they are not meant to be read as scripture. However, they are written to be consistent with both God’s and man’s nature. By dramatising the accounts, my hope is that they would help you experience just one possibility of what it might have been like for each person. A glimpse into the unique journey of their hearts and minds, of their hopes and fears, leading up to the moment of their encounter with Jesus and subsequent breakthrough. Every story, every breakthrough, has been recorded in scripture to encourage us. For what God has done for one, is available for all… for you!</p>
             <p>After each short story I have added a few thoughts and questions to help you ponder, explore and go on your own journey encountering Jesus.</p>
-            <a className="btn btn-light" href="https://www.amazon.co.uk/dp/B08B35T9MC">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08B35T9MC">Amazon USA</a>
+            <a className="btn btn-primary" href="https://www.amazon.co.uk/dp/B08B35T9MC">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08B35T9MC">Amazon USA</a>
+            {/* <a className="btn btn-light" href="https://www.amazon.co.uk/dp/B08B35T9MC">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08B35T9MC">Amazon USA</a> */}
           </div>
         </div>
 

@@ -27,7 +27,7 @@ function BlogComp() {
     }
 
     return (
-        <div className="blogContainer">
+        <div className="blogUpdateContainer">
             <form onSubmit={handleSubmit}>
                 <lable for="titleN" >Title: </lable><br></br>
                 <input type="text" id="titleN" name="titleN" onChange={e => setTitle(e.target.value)} size="50"/><br></br>
