@@ -8,7 +8,7 @@ class nav extends React.Component {
         return (
 
 
-            <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar sticky-top navbar-expand-sm navbar-white">
                 {/* <Link class="navbar-brand" to="/">Treasures</Link>
                 <Link className="navbar-brand" to="public/TreasuresFinSub.png"></Link> */}
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

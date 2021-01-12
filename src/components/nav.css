@@ -48,16 +48,18 @@
 
 .nav-link:active {
   background: rgb(143, 165, 171);
-  color: #fff;
+  color: var(--tr-honey);
   border-radius: 6px;
 }
 .navbar-logo {
-  height: 100px;
+  height: 110px;
   width: auto;
   padding: 20px 20px;
 }
 
 .navbar {
+  font-weight: bold;
   box-shadow: 0 5px 6px rgba(166, 167, 167, 0.5);
+  background: var(--tr-pastelGreen);
   padding: 10px 80px;
 }
