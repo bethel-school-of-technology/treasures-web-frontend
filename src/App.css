@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
+  background-color: var(--light-color);
   /* min-height: 100vh; */
   /* display: flex; */
   /* flex-direction: column; */
@@ -25,13 +25,18 @@
 
   text-align: center;
   color: black;
-  background-color:  grey;
   padding: 1rem;
   /* margin-top: 1rem; */
 }
 
+.App-header-h3 {
+  font-family: 'buttermilk_farmhouseregular';
+}
+
 .App-link {
-  color: #61dafb;
+  color: var (--tr-blue);
+  font-family: 'buttermilk_farmhouseregular';
+  font-size: 40pt;
 }
 
 @keyframes App-logo-spin {

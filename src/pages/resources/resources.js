@@ -7,6 +7,8 @@ import Encounters from '../../images/Encounters.jpg';
 import WhoAmI from '../../images/WhoAmI.jpg';
 
 function Resources() {
+
+
   const cardInfo = [
     {
       image: "../../images/TimesAndSeasons.jpg",
@@ -67,6 +69,9 @@ function Resources() {
       //     <Card.Text>{card.text}</Card.Text>
       //   </Card.Body>
       // </Card>
+
+
+
       <div className="card" key={index}>
         <div className="card-header">{card.header}</div>
         <img className="card-img-top" src={card.image} alt={"dummy text"}></img>
@@ -76,11 +81,27 @@ function Resources() {
           <p className="card-text">{card.text}</p>
         </div>
       </div>
+
     )
   };
 
   return (
+
+
+
     <div className="resources">
+
+      <div class="container" className="tagLineSpacer">
+        <div class="row">
+          <div class="col">
+            <header className="taglineText">
+              <h3> Wholeness Through A Journey of Love </h3>
+              <hr></hr>
+            </header>
+          </div>
+        </div>
+      </div>
+
       <h2>Resources</h2>
       <p>We currently have a number of really amazing and lovely journals, all written and designed by Karen (20cm square in size). All just £8 each, plus postage (£2 per journal) or free collection. To keep costs low we ask you to simply email us below the Journals you would like to purchase and your postage address and we will email you the payment information and post it to you… simple!</p>
 
