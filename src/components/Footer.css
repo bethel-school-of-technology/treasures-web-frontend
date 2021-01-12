@@ -16,6 +16,20 @@
   /* opacity: 0.95; */
 }
 
+@media (max-width: 600px) {
+  .footer {
+    position: relative;
+  }
+}
+
+@media (min-width: 601px) {
+  .footer {
+    position: fixed;
+  }
+}
+
+
+
 /* html {
    font-size: 2vw;
 } */
