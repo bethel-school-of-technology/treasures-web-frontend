@@ -6,8 +6,8 @@
   padding: 1rem;
   /* margin-top: 6rem; */
   width: 100%;
-  padding-bottom: 20rem;
-  margin-bottom: 10rem;
+  /* padding-bottom: 20rem;
+  margin-bottom: 10rem; */
 }
 
 .text {
@@ -36,7 +36,7 @@ img {
 .bookSelf {
   padding: 1rem;
   margin: 1rem;
-  background-color: gray;
+  background-color: var(--tr-honey);
   text-align: left;
 }
 

@@ -24,7 +24,8 @@
 
 @media (min-width: 601px) {
   .footer {
-    position: fixed;
+    /* position: fixed; */
+    position: relative;
   }
 }
 
