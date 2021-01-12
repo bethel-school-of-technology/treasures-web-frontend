@@ -9,7 +9,7 @@ function StrapLine() {
     console.log("times = " + times)
     return phrase.repeat(times);
   };
-  
+
   window.onresize = repeatStringNumTimes
 
   // const heightOutput = document.querySelector('#height');
@@ -28,7 +28,7 @@ function StrapLine() {
       </div> */}
       <div className="row">
         {/* removed col from line below as was picking up settings from footer.css */}
-        <div className="strapLine text-nowrap"> 
+        <div className="strapLine text-nowrap">
           {repeatStringNumTimes()} -
         </div>
       </div>
@@ -36,4 +36,5 @@ function StrapLine() {
   )
 }
 
-export default StrapLine
+
+export default StrapLine /* Do we need ; at the end of this line? */

@@ -91,9 +91,9 @@ function Resources() {
 
     <div className="resources">
 
-      <div class="container" className="tagLineSpacer">
-        <div class="row">
-          <div class="col-12">
+      <div className="container" className="tagLineSpacer">
+        <div className="row">
+          <div className="col-12">
             <header className="taglineText">
               <h4>Wholeness Through A Journey of Love</h4>
               <hr></hr>
