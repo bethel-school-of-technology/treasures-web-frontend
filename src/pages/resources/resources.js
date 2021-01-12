@@ -2,14 +2,7 @@ import React from 'react';
 import './resources.css';
 import StrapLine from '../../components/strapLine';
 
-import TimesAndSeasons from '../../images/TimesAndSeasons.jpg';
-import MyTrueIdentity from '../../images/MyTrueIdentity.jpg';
-import IAmLoved from '../../images/IAmLoved.jpg';
-import PreciousAndBeautiful from '../../images/PreciousAndBeautiful.jpg';
-import FaithHopeLove from '../../images/FaithHopeLove.jpg';
-import LetMeBe from '../../images/LetMeBe.jpg';
-import CoachingCover from '../../images/CoachingCover.jpg';
-import DareToDream from '../../images/DareToDream.jpg'
+
 import Encounters from '../../images/Encounters.jpg';
 import WhoAmI from '../../images/WhoAmI.jpg';
 
@@ -36,7 +29,7 @@ function Resources() {
     {
       image: "../../images/PreciousAndBeautiful.jpg",
       header: "Prayer Journal",
-      title: "Precious &amp; Beautiful",
+      title: "Precious & Beautiful",
       text: "Praying to know and live out your beauty"
     },
     {
@@ -90,7 +83,7 @@ function Resources() {
     <div className="resources">
       <h2>Resources</h2>
       <p>We currently have a number of really amazing and lovely journals, all written and designed by Karen (20cm square in size). All just £8 each, plus postage (£2 per journal) or free collection. To keep costs low we ask you to simply email us below the Journals you would like to purchase and your postage address and we will email you the payment information and post it to you… simple!</p>
-      
+
       {/* <hr></hr> */}
       <StrapLine />
 
@@ -101,7 +94,7 @@ function Resources() {
 
       {/* <hr></hr> */}
       <StrapLine />
- 
+
       <div className="container-fluid">
         <h3>Books that are available on Amazon</h3>
 
@@ -110,13 +103,14 @@ function Resources() {
             <a href="https://www.amazon.co.uk/dp/B08B35T9MC">
               <img className="textWrapLeft" src={Encounters} alt={"Encounters"}></img>
             </a>
-          {/* </div>
+            {/* </div>
           <div className="col-6 col-md-8 "> */}
             <h4>Encounters</h4>
             <p >Just one short encounter with Jesus was all it took for people to step into freedom, wholeness and life, even after years of suffering with complex issues. Yet each encounter was the result of a journey. What was going on in their hearts and minds as they reached out to Jesus? What were their hopes and fears as they journeyed towards Him? - Maybe they were the same ones as you have?</p>
             <p>These ten stories are based on the accounts found in the gospels but they are not meant to be read as scripture. However, they are written to be consistent with both God’s and man’s nature. By dramatising the accounts, my hope is that they would help you experience just one possibility of what it might have been like for each person. A glimpse into the unique journey of their hearts and minds, of their hopes and fears, leading up to the moment of their encounter with Jesus and subsequent breakthrough. Every story, every breakthrough, has been recorded in scripture to encourage us. For what God has done for one, is available for all… for you!</p>
             <p>After each short story I have added a few thoughts and questions to help you ponder, explore and go on your own journey encountering Jesus.</p>
             <a className="btn btn-primary" href="https://www.amazon.co.uk/dp/B08B35T9MC">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08B35T9MC">Amazon USA</a>
+            {/* <a className="btn btn-light" href="https://www.amazon.co.uk/dp/B08B35T9MC">Amazon UK</a> &nbsp; <a className="btn btn-primary" href="https://www.amazon.com/dp/B08B35T9MC">Amazon USA</a> */}
           </div>
         </div>
 
@@ -125,7 +119,7 @@ function Resources() {
             <a href="https://www.amazon.co.uk/dp/B08B35T9MC">
               <img className="textWrapRight" src={WhoAmI} alt={"WhoAmI"}></img>
             </a>
-          {/* </div>
+            {/* </div>
           <div className="col-6 col-md-8"> */}
             <h4>Who Am I? &amp; Who Are You?</h4>
             <p>This book is not simply a book... it’s an adventure!</p>
