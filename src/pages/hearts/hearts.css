@@ -1,12 +1,48 @@
 .hearts {
-    text-align: center;
-    color: white;
-    background-color:  grey;
-    padding: 4rem;
+    text-align: left;
+    margin: 3rem 5rem;
+    /* color: white; */
+    /* background-color:  grey; */
+    /* padding: 4rem; */
     /* margin-top: 6rem; */
 }
 
-/* p {
-    width: 100%;
-    color: white;
-} */
+
+.textWrapLeft {
+    clear: right;
+    float: left;
+    /* margin: 1rem;
+    max-width: 20rem; */
+} 
+
+.textWrapRight {
+    clear: left;
+    float: right;
+    /* margin: 1rem;
+    max-width: 20rem; */
+}
+
+
+@media (max-width: 600px) {
+    .textWrapLeft {
+        float: center;
+        margin: 0.5rem;
+        max-width: 15rem;
+    }
+    .textWrapRight {
+        float: center;
+        margin: 0.5rem;
+        max-width: 15rem;
+    }
+}
+
+@media (min-width: 601px) {
+    .textWrapLeft {
+        margin: 1rem;
+        max-width: 25rem;
+    }
+    .textWrapRight {
+        margin: 1rem;
+        max-width: 25rem;
+    }
+}

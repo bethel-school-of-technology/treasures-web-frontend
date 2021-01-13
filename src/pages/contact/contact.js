@@ -33,7 +33,7 @@ function MyForm() {
                 <input className="round" type="text" name="email" onChange={e => setEmail(e.target.value)}></input><br />
                 <label>Questions or Comments:</label><br />
                 <textarea className="round" placeholder="Your feedback is welcome here." name="message" onChange={e => setMessage(e.target.value)} cols="50" rows="10"></textarea><br />
-                <input class="submit-button" type="submit" name="send" value="Submit"></input>
+                <input className="submit-button" type="submit" name="send" value="Submit"></input>
             </form>
         </div>
     )
