@@ -54,7 +54,7 @@ function Login() {
                         </div>
                         <button className="w-100 btn btn-lg btn-primary" type="submit">Login</button>
                         <p className="mt-5 mb-3 text-muted">© 2020</p>
-                        <Link to="src/pages/users/SignUp.js">Create An Account</Link>
+                        <Link to="/SignUp">Create An Account</Link>
                     </form>
                 </main>
             </div>
