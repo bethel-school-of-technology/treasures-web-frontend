@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Logo from "./../images/TreasuresFin.png";
+import Logo from "./../images/TreasuresFinSub.png";
 import "./nav.css";
 
 class nav extends React.Component {
@@ -8,13 +8,13 @@ class nav extends React.Component {
         return (
 
 
-            <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light">
                 {/* <Link class="navbar-brand" to="/">Treasures</Link>
                 <Link className="navbar-brand" to="public/TreasuresFinSub.png"></Link> */}
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarText">
+                <div className="collapse navbar-collapse" id="navbarNav">
 
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
@@ -37,9 +37,6 @@ class nav extends React.Component {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/SignUp">SignUp</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/Login">Login</Link>
                         </li>
                     </ul>
                     <div className="navbar-header">

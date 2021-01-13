@@ -75,3 +75,12 @@ img {
     max-width: 18rem;
   }
 }
+
+.tagLineSpacer {
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px !important;
+}

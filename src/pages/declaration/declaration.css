@@ -1,8 +1,32 @@
 .declaration {
-    text-align: center;
-    color: white;
-    background-color:  grey;
-    padding: 4rem;
-    padding-bottom: 20rem;
-    /* margin-top: 6rem; */
+  text-align: center;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  padding: 0 4rem 20rem 4rem;
+  /* margin-top: 6rem; */
+}
+
+.declaration .col {
+  box-shadow: 5px 10px 5px 0.5px #e7e7e7;
+}
+
+.declaration .amen {
+  padding: 2rem 2rem 2rem 2rem;
+  color: #0075aa;
+  font-family: 'buttermilk_farmhouseregular';
+  font-size: 48pt;
+}
+
+.btn {
+  font-family: 'josefin_sansregular' !important;
+  box-shadow: 2px;
+}
+
+.tagLineSpacer {
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px !important;
 }
