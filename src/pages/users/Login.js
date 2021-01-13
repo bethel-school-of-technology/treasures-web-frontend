@@ -24,15 +24,17 @@ function Login() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
+        var isAuth = false;
         try {
             users.map((user, idx) => {
                 if (user.name === name && user.password === password)
-                    alert("User name or Password do not match");
+                    isAuth = true
                 return;
             })
         } catch (err) {
             console.log(err)
         }
+        alert("Authentication is " + isAuth)
     }
 
 
