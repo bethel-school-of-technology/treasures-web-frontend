@@ -18,11 +18,11 @@ class Footer extends React.Component {
 
             <div className="col">
               <div className="col-1-2">
-                <h3 className="col-title">About</h3>
+                <h4 className="col-title">About</h4>
                 <ul className="footer-menu list-unstyled">
                   <li>
                     <Link className="text-link" to="../hearts">
-                      Our Heart
+                      Our Hearts
                   </Link>
                   </li>
 
@@ -45,15 +45,15 @@ class Footer extends React.Component {
 
             <div className="col">
               <div className="col-1-2">
-                <h3 className="col-title">Contact</h3>
+                <h4 className="col-title">Contact</h4>
                 <ul className="footer-menu list-unstyled">
                   <li>
                     <Link className="text-link" to="../contact">
                       Contact Us
                   </Link>
                     <li>
-                      <Link className="text-link" to="../resources">
-                        Resources
+                      <Link className="text-link" to="/Login">
+                        Login
                   </Link>
                     </li>
                   </li>
