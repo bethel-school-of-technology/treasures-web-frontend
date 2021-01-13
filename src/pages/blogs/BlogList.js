@@ -41,7 +41,8 @@ function BlogList() {
               <div className="card-header">{dateString}</div>
               <div className="card-body">
                 <h5 className="card-title">{ReactHtmlParser(htmlTitle)}</h5>
-                <p className="card-text">{ReactHtmlParser(htmlDescription)}</p>
+                <div className="card-text">{ReactHtmlParser(htmlDescription)}</div>
+                <br></br>
                 <a href={`/blogDetail/${blog._id}`} className="btn btn-primary">Read more...</a>
               </div>
             </div>

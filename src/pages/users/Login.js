@@ -24,15 +24,17 @@ function Login() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
+        var isAuth = false;
         try {
             users.map((user, idx) => {
                 if (user.name === name && user.password === password)
-                    alert("User name or Password do not match");
+                    isAuth = true
                 return;
             })
         } catch (err) {
             console.log(err)
         }
+        alert("Authentication is " + isAuth)
     }
 
 
@@ -54,7 +56,7 @@ function Login() {
                         </div>
                         <button className="w-100 btn btn-lg btn-primary" type="submit">Login</button>
                         <p className="mt-5 mb-3 text-muted">© 2020</p>
-                        <Link to="src/pages/users/SignUp.js">Create An Account</Link>
+                        <Link to="/SignUp">Create An Account</Link>
                     </form>
                 </main>
             </div>

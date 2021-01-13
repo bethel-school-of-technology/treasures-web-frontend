@@ -30,7 +30,8 @@ class Footer extends React.Component {
                     <Link className="text-link" to="../declaration">
                       Declarations
                   </Link>{" "}
-                    <span className="badge badge-info badge-sm">Download</span>
+                    <a href='/Declarations.pdf' download className="badge badge-info badge-sm">Download</a>
+                    {/* <span className="badge badge-info badge-sm">Download</span> */}
                   </li>
                 </ul>
               </div>
