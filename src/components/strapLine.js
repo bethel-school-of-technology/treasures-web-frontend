@@ -37,4 +37,4 @@ function StrapLine() {
 }
 
 
-export default StrapLine /* Do we need ; at the end of this line? */
+export default StrapLine; 
