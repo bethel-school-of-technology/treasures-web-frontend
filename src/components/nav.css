@@ -55,12 +55,12 @@
 .navbar-logo {
   height: 110px;
   width: auto;
-  padding: 20px 20px;
+  padding: 15px 15px;
 }
 
 .navbar {
   font-weight: bold;
   box-shadow: 0 5px 6px rgba(166, 167, 167, 0.5);
   background: var(--tr-pastelGreen);
-  padding: 10px 80px;
+  padding: 3px 65px;
 }

@@ -2,7 +2,8 @@
   text-align: center;
   color: var(--dark-color);
   background-color: var(--light-color);
-  padding: 0 4rem 20rem 4rem;
+  /* padding: 0 4rem 20rem 4rem; */
+  margin: 3rem 5rem;
   /* margin-top: 6rem; */
 }
 

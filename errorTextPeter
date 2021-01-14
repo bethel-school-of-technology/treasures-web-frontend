@@ -41,3 +41,23 @@ npm WARN react-html-parser@2.0.2 requires a peer of react@^0.14.0 || ^15.0.0 || 
 
       ---------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+
+
+        let transporter = nodemailer.createTransport({
+            host: 'smtp.ethereal.email',
+            port: 587,
+            auth: {
+                user: 'marianna77@ethereal.email',
+                pass: 'QtFcCtBVPYRReJhRWS'
+            }
+        })
+
+        let mailOptions = {
+            from: '',
+            to: 'peter.waller53@gmail.com',
+            replyTo: '',
+            subject: 'New Message',
+            html: htmlEmail
+        }
