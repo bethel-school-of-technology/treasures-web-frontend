@@ -1,3 +1,15 @@
+# How to start the frontend
+
+Do a fresh git clone then open it up in VC
+
+Switch to the dev5 branch
+
+npm install
+
+npm start
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
