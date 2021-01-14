@@ -59,7 +59,7 @@ function SignUp() {
                         <input type="password" id="inputPassword" className="form-control" placeholder="Password" required="" onChange={(e) => setPassword(e.target.value)} />
 
                         <label for="inputPassword" className="visually-hidden">Confirm Password</label>
-                        <input type="password" id="inputPassword" className="form-control" placeholder="Password" required="" onChange={(e) => setCPassword(e.target.value)} />
+                        <input type="password" id="inputPassword2" className="form-control" placeholder="Password" required="" onChange={(e) => setCPassword(e.target.value)} />
 
                         <div className="checkbox mb-3">
                             <label>
@@ -67,7 +67,8 @@ function SignUp() {
                             </label>
                         </div>
                         <button className="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                        <p className="mt-5 mb-3 text-muted">© 2020</p>
+                        {/* <p className="mt-5 mb-3 text-muted">© 2020</p> */}
+                        <br></br><br></br>
                         <Link to="/Login">Already A User?</Link>
                     </form>
                 </main>

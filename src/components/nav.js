@@ -8,7 +8,7 @@ class nav extends React.Component {
         return (
 
 
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <nav className="navbar navbar-expand-lg">
                 {/* <Link class="navbar-brand" to="/">Treasures</Link>
                 <Link className="navbar-brand" to="public/TreasuresFinSub.png"></Link> */}
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@ class nav extends React.Component {
                             <Link className="nav-link" to="/Blogs">Blogs</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/Declaration">Declaration</Link>
+                            <Link className="nav-link" to="/Declaration">Declarations</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/Hearts">Our Hearts</Link>
