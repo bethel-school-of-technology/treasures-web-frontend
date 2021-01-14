@@ -40,6 +40,10 @@ img {
   text-align: left;
 }
 
+.bookSelfBtn{
+  text-align: center;
+}
+
 .textWrapLeft {
   clear: right;
   float: left;

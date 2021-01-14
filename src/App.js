@@ -7,7 +7,7 @@ function App() {
       <div className="row">
         <div className="col-12">
           <header className="App-header">
-            <h3>Welcome to the Treasures New Website! Hope you enjoy your stay!</h3>
+            <h3>Welcome to the Treasures New Website! &nbsp; Hope you enjoy your stay!</h3>
             <hr></hr>
             <a
               className="App-link"
